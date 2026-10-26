@@ -45,27 +45,16 @@ icon: material/bullseye-arrow
 
 You are designing a **Webex AI Agent** for a Webex Financial Group. Your mission is to proactively resolve outstanding fees while maintaining a security-first posture. Guide customers through total or partial payments using secure NovaPay links and provide general information and account or transaction history upon request. Support account inquiries and transaction history. Maintain a firm, professional, and helpful tone. Handle contentions professionally, but immediately escalate to a human specialist if a customer disputes an outstanding fee or suspects fraud.
 
-[Webex AI Agent use case example](https://blog.webex.com/customer-experience/announcing-general-availability-of-webex-ai-agent-paving-way-new-era-cx/){:target="_blank"}
 
 ### AI Agent Capabilities
 
-- **Recommending flowers based on customer preferences or occasions**
-- **Collecting order details for both standard and custom bouquets**
-- **Calculating total price in real time**
-- **Gathering delivery information, including address and delivery date**
-- **Order confirmations via SMS**
-- **Transferring to a specific queue with human agents, when needed for complex inquiries**
-
-### Human Agent Support
-
-- **Provide the agent with a summary of the call**
-- **Provide live transcripts to improve the understanding of the customer's request**
-- **Suggest a response to the agent based on the knowledge base**
-- **Generate Post Call Summary**
-
-### Supervisor Support
-
-- **Evaluate agent's quality of service using Evaluation form**
+- **Build Alex, a voice-based financial services AI agent that helps customers manage fees due.**
+- **Verify customers before discussing account-specific information**
+- **Explain balances and due dates, and guide customers through full or partial payments using a secure payment link.**
+- **Answer general banking questions and provide recent transaction details.**
+- **Route transaction disputes or suspected fraud to a human specialist.**
+- **RRoute investment questions to an investment advisor.**
+- **Demonstrate conversational support, payment actions, and human handoffs while protecting customer information.**
 
 ## Learning Objectives
 
