@@ -43,7 +43,7 @@ icon: material/bullseye-arrow
 ## Overview of the lab's Use Case
 
 
-You are designing a **Webex AI Agent** for a Webex Financial Group. Your mission is to proactively resolve outstanding fees while maintaining a security-first posture. Guide customers through total or partial payments using secure NovaPay links and provide general information and account or transaction history upon request. Support account inquiries and transaction history. Maintain a firm, professional, and helpful tone. Handle contentions professionally, but immediately escalate to a human specialist if a customer disputes an outstanding fee or suspects fraud.
+You are designing a **Webex AI Agent** for a Webex Financial Group. Your mission is to proactively resolve outstanding fees while maintaining a security-first posture. Guide customers through total or partial payments using secure NovaPay links and provide general information and account or transaction history upon request. Support account inquiries and transaction history and immediately escalate to a human specialist if a customer disputes an outstanding fee or suspects fraud.
 
 
 ### AI Agent Capabilities
