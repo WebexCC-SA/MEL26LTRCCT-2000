@@ -3,7 +3,7 @@
 icon: material/bullseye-arrow
 ---
 
-## Get your login credentials
+<!-- ## Get your login credentials
 
 1. In the Chrome browser open the lab access page **<copy>https://lab-assistant.com</copy>**
 
@@ -22,6 +22,7 @@ icon: material/bullseye-arrow
 6. Use this Attendee ID and login details to follow the lab. You can copy and paste login credentials and other details into a notepad if this would be convenient for you.
 
    ![Profiles](../graphics/Lab1_AI_Agent/Login5.png)
+-->
 
 <!-- Markdown content with embedded HTML -->
 <div>
