@@ -65,11 +65,11 @@ Welcome to **"Hands-on AI in Action with Webex Contact Center: Enhancing Self-Se
 In this lab, participants will: <br><br>
 **• Uncover Trends & Opportunities:** Analyze customer conversation data to identify key themes, trends, and automation opportunities for improved service efficiency. <br><br>
 **• Integrate Intelligent AI Agents:** Utilize Cisco Autonomous AI Agent to build dynamic, context-aware self-service flows that adapt to customer needs in real-time. <br><br>
-**• Seamless AI-to-Human Collaboration:** Experience smooth transitions from AI agents to human agents, ensuring continuous context and interaction summaries for effective issue resolution. <br><br>
+<!--  **• Seamless AI-to-Human Collaboration:** Experience smooth transitions from AI agents to human agents, ensuring continuous context and interaction summaries for effective issue resolution. <br><br>
 **• Enhance In-Interaction Insights:** Experience AI-driven call summarisation to enhance agent productivity and service quality.<br><br>
 **• Predict Customer Sentiment:** Learn to leverage AI to forecast customer satisfaction (CSAT) based on interaction data, enabling proactive.<br><br>
 **• Evaluate Agent's performance:** Learn to leverage AI QM to evaluate the agent's quality of provided service based on the preconfigured template.
-
+-->
 ## Disclaimer
 
 The lab design and configuration examples provided are for educational purposes. For production design queries, please consult your Cisco representative or an authorized Cisco partner.
