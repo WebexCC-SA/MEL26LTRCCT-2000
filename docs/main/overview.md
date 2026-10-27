@@ -63,8 +63,9 @@ Welcome to **"Hands-on AI in Action with Webex Contact Center: Enhancing Self-Se
 ![Profiles](../graphics/NewLab/Overview/1.1.png)
 
 In this lab, participants will: <br><br>
-**• Automate routine interactions using AI:**  <br><br>
-**• Seamlessly orchestrate human intervention when needed:**<br><br>
+**• Automate routine interactions using AI** <br><br>
+**• Seamlessly orchestrate human intervention when needed**<br><br>
+** Additionally, you will leverage the NovaPay mock-payment service built for the purpose of this Bootcamp. The NovaPay service provides a mockpayment frontend web site that mimics a typical payment user interface and a web service that exposes an API to create payment sessions, accept payments and check the payment status. **<br><br>
 <!--  **• Seamless AI-to-Human Collaboration:** Experience smooth transitions from AI agents to human agents, ensuring continuous context and interaction summaries for effective issue resolution. <br><br>
 **• Enhance In-Interaction Insights:** Experience AI-driven call summarisation to enhance agent productivity and service quality.<br><br>
 **• Predict Customer Sentiment:** Learn to leverage AI to forecast customer satisfaction (CSAT) based on interaction data, enabling proactive.<br><br>
