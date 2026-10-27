@@ -89,7 +89,7 @@ nav:
   - Home: index.md
   - Getting Started:
       - Lab Overview: ./main/overview.md
-      - Access you Lab Environment: ./main/PreRequisites.md
+      - Access your Lab Environment: ./main/PreRequisites.md
   #      - Quick Links: quicklinks.md
   #      - Chrome and Webex App Setup: ./main/Browser_and_Desktop_Setup.md
   #  - Topic Analytics:
