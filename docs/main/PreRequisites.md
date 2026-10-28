@@ -20,9 +20,9 @@ icon: material/bullseye-arrow
 
 > Entry Point/Channel: **<copy><w class="attendee"></w>\_Channel</copy>**
 
-> Queue: **<copy><w class="attendee"></w>\_2000_Voice_Queue</copy>**
+> Queue: **<copy><w class="attendee"></w>\_Queue</copy>**
 
-> Team: **<copy><w class="attendee"></w>\_2000_Team</copy>**
+> Team: **<copy><w class="attendee"></w>\_Team</copy>**
 
 > Admin: **<copy>wxcclabs+admin_ID<w class="attendee"></w>@gmail.com</copy>**
 
@@ -30,7 +30,7 @@ icon: material/bullseye-arrow
 
 > Webex App has been pre-installed on your Lab PC
 
-> Inbound Phone Number: Assigned to your Channel **<copy><w class="attendee"></w>\_2000_Channel</copy>**
+> Inbound Phone Number: Assigned to your Channel **<copy><w class="attendee"></w>\_Channel</copy>**
 
 More pre-configured entities will be mentioned during the lab missions if they have any.
 
