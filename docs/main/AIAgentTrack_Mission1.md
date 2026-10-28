@@ -16,12 +16,20 @@ Your mission is to:
 
 ## Build
 
-### Task 1. Create a new AI Agent with Knowladge Base
+## Pre-requisites
 
-1. Download the .xlsx file [Flowrs_Catalog](https://docs.google.com/spreadsheets/d/1A5d1ZEPWmPE_38Bi8bVULKLhCH0wyGX4/edit?usp=sharing&ouid=100862210011127627593&rtpof=true&sd=true){:target="\_blank"}.
-   > **Flower_Catalog.xlsx** - file contains information on the available single flowers and bouquets, including the price of the flowers or bouquets and occasions that suit the flowers.
-   ![Profiles](../graphics/Lab1_AI_Agent/2.74.png)
-2. Microsoft office is not installed on this PC so you cannot open the file directly to review it. So please review the screenshots below to understand the file content that you will be using for you Knowledge base.
+In order to be able to complete this lab, you must:
+
+You already have your Airtable repositories completed for the Customer and Transactions data
+You already have an email digital channel available in your tenant
+
+### Task 1. Create Alex, your Debt Collection AI Agent
+
+1. In this first step, you will define the "brain" and personality of your AI Agent. You will configure the core identity of Alex, setting the professional and secure tone required for financial interactions. This section covers the implementation of the System Prompt, where you will establish the strict sequential logic—from name verification to debt disclosure—ensuring the agent acts as a secure first-line filter for Webex Financial Group.
+
+2. Navigate to [Control Hub](https://admin.webex.com){:target="\_blank"} as you attendee admin > Admin: **<copy>wxcclabs+admin_ID<w class="attendee"></w>@gmail.com</copy>**
+
+3. Microsoft office is not installed on this PC so you cannot open the file directly to review it. So please review the screenshots below to understand the file content that you will be using for you Knowledge base.
    ![Profiles](../graphics/Lab1_AI_Agent/Knowledge1.png)
    ![Profiles](../graphics/Lab1_AI_Agent/Knowledge2.png)
    ![Profiles](../graphics/Lab1_AI_Agent/Knowledge3.png)
