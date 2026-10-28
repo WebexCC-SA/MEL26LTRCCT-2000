@@ -9,7 +9,7 @@ icon: material/medal
 
 Your mission is to:
 
-**Create an AI agent and upload the knowledge base (KB)** to enable the agent to provide answers about available flowers and assist customers with creating an order or transferring the interaction to a human agent.
+**Create an AI agent** to enable the agent to transact and assist customers with making payments, enquiries on their accoubt or transferring the interaction to a human agent.
 ![Profiles](<../graphics/Lab1_AI_Agent/Untitled(9).jpg>)
 
 ---
@@ -22,6 +22,13 @@ In order to be able to complete this lab, you must:
 
 You already have your Airtable repositories completed for the Customer and Transactions data
 You already have an email digital channel available in your tenant
+You can access the Airtable Repo using your email address specially made for this lab: > Admin: **<copy>wxcclabsadmin_ID<w class="attendee"></w>@appinzip.com</copy>**
+
+
+wxcclabsadmin_id010@appinzip.com
+https://webmail.appinzip.com
+For example: wxcclabsadmin_ID010@appinzip.com
+
 
 ### Task 1. Create Alex, your Debt Collection AI Agent
 
