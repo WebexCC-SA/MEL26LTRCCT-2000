@@ -57,10 +57,5 @@ More pre-configured entities will be mentioned during the lab missions if they h
    ![Profiles](../graphics/Lab1_AI_Agent/18.4.gif)
 
 #### Calling to Contact Center
-Place test call to the test number +15206603108 to confirm that you Webex Phone is configured to place calls. You will hear TTS response from the test flow. If you are planning to use your cellphone for testing you can also try to call the number. 
+Place test call to the test number +14694097636 to confirm that you Webex Phone is configured to place calls. You will hear a response from the test flow. If you are planning to use your cellphone for testing you can also try to call the number.
    ![Profiles](../graphics/Lab1_AI_Agent/18.5.gif)
-
-
-
-Place test call to the test number +15206603108 to confirm that you Webex Phone is configured to place calls. You will hear TTS response from the test flow. If you are planning to use your cellphone for testing you can also try to call the number.
-![Profiles](../graphics/Lab1_AI_Agent/18.5.gif)
