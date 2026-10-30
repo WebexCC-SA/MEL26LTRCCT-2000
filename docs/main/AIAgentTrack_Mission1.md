@@ -37,6 +37,10 @@ Password has been provided to you.
 
 2. Navigate to [Control Hub](https://admin.webex.com){:target="\_blank"} as you attendee admin > Admin: **<copy>wxcclabs+admin_ID<w class="attendee"></w>@gmail.com</copy>**
 
+3. Click on Contact Center
+
+<details>![Profiles](../graphics/Lab1_AI_Agent/nav_ch_cc_aiagent.mov)</details>
+
 3. Microsoft office is not installed on this PC so you cannot open the file directly to review it. So please review the screenshots below to understand the file content that you will be using for you Knowledge base.
    ![Profiles](../graphics/Lab1_AI_Agent/Knowledge1.png)
    ![Profiles](../graphics/Lab1_AI_Agent/Knowledge2.png)
