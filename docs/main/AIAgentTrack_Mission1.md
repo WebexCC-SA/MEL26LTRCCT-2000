@@ -18,24 +18,26 @@ Your mission is to:
 
 ## Pre-requisites
 
-In order to be able to complete this lab, you must:
+In order to be able to complete this lab, you need this:
+
+<span style="color: red;">[IMPORTANT - DO NOT DO THESE STEPS NOW. GO TO TASK 1 BELOW]</span>
 
 You already have your Airtable repositories completed for the Customer and Transactions data
+Use the Airtable Credentials provided to you.
 You already have an email digital channel available in your tenant.
 You can access the Airtable Repo using your email address specially made for this lab:
 Admin: **<copy>wxcclabsadmin_ID<w class="attendee"></w>@appinzip.com</copy>**
 
-How to check your email:
-https://webmail.appinzip.com
+[Check your email](https://webmail.appinzip.com){:target="\_blank"}
 Put in your email address from above. For example: wxcclabsadmin_ID010@appinzip.com
-Password has been provided to you.
+Use the Password that has been provided to you.
 
 
 ### Task 1. Create Alex, your Debt Collection AI Agent
 
 1. In this first step, you will define the "brain" and personality of your AI Agent. You will configure the core identity of Alex, setting the professional and secure tone required for financial interactions. This section covers the implementation of the System Prompt, where you will establish the strict sequential logic—from name verification to debt disclosure—ensuring the agent acts as a secure first-line filter for Webex Financial Group.
 
-2. <span style="color: red;">[IMPORTANT]</span> Download the file [Pre_config_AIAgent](../graphics/Lab1_AI_Agent/domgonsa_outstanding_collection.json){: download="domgonsa_outstanding_collection.json"}. Save it your computer's desktop or whereever you like it to be saved. We will need to use this in a bit.
+2. <span style="color: red;">[IMPORTANT]</span> Download the file [Pre_config_AIAgent](../graphics/Lab1_AI_Agent/domgonsa_outstanding_collection.json){: download="domgonsa_outstanding_collection.json"}. The file might download to your browser’s configured download location. Move it to another folder if needed. If prompted, save it your computer's desktop or whereever you like it to be saved. We will need to use this in a bit.
 
     > **domgonsa_outstanding_collection.json** - contains a prebuilt agent that we can import and step through, including the actions and what they mean.
 
@@ -44,7 +46,7 @@ Password has been provided to you.
 4. Click on Contact Center and from the left side navigation panel, and under **Overview > Quick Links**, click on **Webex AI Agent**.
    ![Profiles](../graphics/Lab1_AI_Agent/L1M6_OpenWebexAI1.gif)
 
-5. Click on Import Agent on the Right Hand Top Corner
+5. Click on Import Agent - the Right Hand Top Corner
 6. Click on Upload
 7. Choose the JSON you downloaded on step 2 above.
 8. Agent Name that has your attendee ID prefixed: **<copy><w class="attendee"></w>_outstanding_collection</copy>**
