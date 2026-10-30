@@ -35,46 +35,41 @@ Password has been provided to you.
 
 1. In this first step, you will define the "brain" and personality of your AI Agent. You will configure the core identity of Alex, setting the professional and secure tone required for financial interactions. This section covers the implementation of the System Prompt, where you will establish the strict sequential logic—from name verification to debt disclosure—ensuring the agent acts as a secure first-line filter for Webex Financial Group.
 
-2. <span style="color: red;">[IMPORTANT]</span> Download the file [<a href="../graphics/Lab1_AI_Agent/domgonsa_outstanding_collection.json" download="domgonsa_outstanding_collection.json">Pre_config_AIAgent</a>. Save it your computer's desktop or whereever you like it to be saved. We will need to use this in a bit.
+2. <span style="color: red;">[IMPORTANT]</span> Download the file [Pre_config_AIAgent](../graphics/Lab1_AI_Agent/domgonsa_outstanding_collection.json){: download="domgonsa_outstanding_collection.json"}. Save it your computer's desktop or whereever you like it to be saved. We will need to use this in a bit.
 
-> **domgonsa_outstanding_collection.json** - contains a prebuilt agent that we can import and step through, including the actions and what they mean.
+  > **domgonsa_outstanding_collection.json** - contains a prebuilt agent that we can import and step through, including the actions and what they mean.
 
 3. Navigate to [Control Hub](https://admin.webex.com){:target="\_blank"} as you attendee admin **<copy>wxcclabs+admin_ID<w class="attendee"></w>@gmail.com</copy>** with the password provided to you.
 
 4. Click on Contact Center and from the left side navigation panel, and under **Overview > Quick Links**, click on **Webex AI Agent**.
-<details>![Profiles](../graphics/Lab1/L1M6_OpenWebexAI.gif)</details>
+   ![Profiles](../graphics/Lab1_AI_Agent/L1M6_OpenWebexAI1.gif)
 
 5. Click on Import Agent on the Right Hand Top Corner
 6. Click on Upload
 7. Choose the JSON you downloaded on step 2 above.
-8. Agent Name: **<copy><w class="attendee"></w>outstanding_collection</copy>**
+8. Agent Name that has your attendee ID prefixed: **<copy><w class="attendee"></w>_outstanding_collection</copy>**
 
-4. Open **Contact Center** from the left side navigation panel, and under **Overview > Quick Links**, click on **Webex AI Agent**.
-   ![Profiles](../graphics/Lab1_AI_Agent/L1M6_OpenWebexAI1.gif)
+9. In AI Agent Builder, navigate to **Knowledge** from the menu panel on the left side.
 
-
-
-5. In AI Agent Builder, navigate to **Knowledge** from the menu panel on the left side.
-
-6. Click **Create Knowledge Base**, provide Knowledge base name as **<copy><w class="attendee"></w>\_2000_AI_KB</copy>**, then click **Create**.
+10. Click **Create Knowledge Base**, provide Knowledge base name as **<copy><w class="attendee"></w>\_2000_AI_KB</copy>**, then click **Create**.
    ![Profiles](../graphics/Lab1_AI_Agent/2.1.gif)
 
-7. Click on **Upload Files**.
+11. Click on **Upload Files**.
    ![Profiles](../graphics/Lab1_AI_Agent/2.1.a.png)
 
-8. Click **Add File** or drag and drop the downloaded file **Flower_Catalog.xlsx** you downloaded on **Step 1**. Then click **Process Files**. Wait until the file is processed. 
+12. Click **Add File** or drag and drop the downloaded file **Flower_Catalog.xlsx** you downloaded on **Step 1**. Then click **Process Files**. Wait until the file is processed. 
    ![Profiles](../graphics/Lab1_AI_Agent/2.2.gif)
 
 
-9. <span style="color: red;">[Read Only]</span> : You can also create an Article or refer your Websites for the Knowledge source. 
+13. <span style="color: red;">[Read Only]</span> : You can also create an Article or refer your Websites for the Knowledge source. 
    ![Profiles](../graphics/Lab1_AI_Agent/2.2.a.png)
 
-10. Navigate to **AI Agents** from the left-hand side menu panel and click on **Create Agent**.
+14. Navigate to **AI Agents** from the left-hand side menu panel and click on **Create Agent**.
    ![Profiles](../graphics/Lab1_AI_Agent/2.58.gif)
-11. Select **Start from Scratch** and click **Next**.
-12. On **Create an AI agent** page select the following select the type of agent: **Autonomous**.
+15. Select **Start from Scratch** and click **Next**.
+16. On **Create an AI agent** page select the following select the type of agent: **Autonomous**.
 
-13. Provide the following information in the **Add the essential details**, then click **Create**:
+17. Provide the following information in the **Add the essential details**, then click **Create**:
 
     > Agent Name: **<copy><w class="attendee"></w>\_2000_AutoAI_Lab</copy>**
     >
@@ -90,11 +85,11 @@ Password has been provided to you.
 
     ![Profiles](../graphics/Lab1_AI_Agent/2.3.gif)
 
-14. Customize the Welcome message with: **_<copy>Hi there, my name is Blossom, the AI Agent. How can I assist you?</copy>_**
+18. Customize the Welcome message with: **_<copy>Hi there, my name is Blossom, the AI Agent. How can I assist you?</copy>_**
 
     ![Profiles](../graphics/Lab1_AI_Agent/2.16.png)
 
-15. In the instructions, add additional specific guidelines that you would like the AI Agent to follow. Just **copy the text below and paste it to the Instructions section** (use the **copy** icon on the code block): <br>
+19. In the instructions, add additional specific guidelines that you would like the AI Agent to follow. Just **copy the text below and paste it to the Instructions section** (use the **copy** icon on the code block): <br>
 
     ``` text
     You are a flower ordering assistant.
@@ -203,12 +198,12 @@ Password has been provided to you.
 
     ![Profiles](../graphics/Lab1_AI_Agent/2.4.png)
 
-16. <span style="color: red;">[Read Only]</span> Here you can find the best practices on how to write the  Instructions: [Prompt engineering tips when writing instructions](https://help.webex.com/en-us/article/nelkmxk/Guidelines-and-best-practices-for-automating-with-AI-agent#concept-template_96114022-037a-46be-80ce-bf8c6b0d67c0){:target="_blank"}
+20. <span style="color: red;">[Read Only]</span> Here you can find the best practices on how to write the  Instructions: [Prompt engineering tips when writing instructions](https://help.webex.com/en-us/article/nelkmxk/Guidelines-and-best-practices-for-automating-with-AI-agent#concept-template_96114022-037a-46be-80ce-bf8c6b0d67c0){:target="_blank"}
 
-17. Switch to **Knowledge** tab. From drop-down list, search for **<copy><w class="attendee"></w>\_2000_AI_KB</copy>**. If you don't see your **Knowledge base** in the list it still could be processing. Then select the one we processed earlier for your user. From **Knowledge base** drop-down list, select **<copy><w class="attendee"></w>\_2000_AI_KB_Plan_B</copy>**. Click on **Save changes**.
+21. Switch to **Knowledge** tab. From drop-down list, search for **<copy><w class="attendee"></w>\_2000_AI_KB</copy>**. If you don't see your **Knowledge base** in the list it still could be processing. Then select the one we processed earlier for your user. From **Knowledge base** drop-down list, select **<copy><w class="attendee"></w>\_2000_AI_KB_Plan_B</copy>**. Click on **Save changes**.
     ![Profiles](../graphics/Lab1_AI_Agent/2.5.gif)
 
-18. **Publish** the AI Agent. Provide any version name in popped up window (e.g. "V1").<br>
+22. **Publish** the AI Agent. Provide any version name in popped up window (e.g. "V1").<br>
     ![Profiles](../graphics/Lab1_AI_Agent/2.6.gif)
 
 ### Task 2. Test your AI Agent
