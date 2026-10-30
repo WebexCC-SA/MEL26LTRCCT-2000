@@ -21,13 +21,14 @@ Your mission is to:
 In order to be able to complete this lab, you must:
 
 You already have your Airtable repositories completed for the Customer and Transactions data
-You already have an email digital channel available in your tenant
-You can access the Airtable Repo using your email address specially made for this lab: > Admin: **<copy>wxcclabsadmin_ID<w class="attendee"></w>@appinzip.com</copy>**
+You already have an email digital channel available in your tenant.
+You can access the Airtable Repo using your email address specially made for this lab:
+Admin: **<copy>wxcclabsadmin_ID<w class="attendee"></w>@appinzip.com</copy>**
 
-
-wxcclabsadmin_id010@appinzip.com
+How to check your email:
 https://webmail.appinzip.com
-For example: wxcclabsadmin_ID010@appinzip.com
+Put in your email address from above. For example: wxcclabsadmin_ID010@appinzip.com
+Password has been provided to you.
 
 
 ### Task 1. Create Alex, your Debt Collection AI Agent
