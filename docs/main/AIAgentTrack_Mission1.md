@@ -35,8 +35,9 @@ Password has been provided to you.
 
 1. In this first step, you will define the "brain" and personality of your AI Agent. You will configure the core identity of Alex, setting the professional and secure tone required for financial interactions. This section covers the implementation of the System Prompt, where you will establish the strict sequential logic—from name verification to debt disclosure—ensuring the agent acts as a secure first-line filter for Webex Financial Group.
 
-2. <span style="color: red;">[IMPORTANT]</span> Download the file [Pre_config_AIAgent](../graphics/Lab1_AI_Agent/domgonsa_outstanding_collection.json){:outstanding_collection}. Save it your computer's desktop or whereever you like it to be saved. We will need to use this in a bit.
-> **domgonsa_outstanding_collection,json** - contains a prebuilt agent that we can import and step through, including the actions and what they mean.
+2. <span style="color: red;">[IMPORTANT]</span> Download the file [<a href="../graphics/Lab1_AI_Agent/domgonsa_outstanding_collection.json" download="domgonsa_outstanding_collection.json">Pre_config_AIAgent</a>. Save it your computer's desktop or whereever you like it to be saved. We will need to use this in a bit.
+
+> **domgonsa_outstanding_collection.json** - contains a prebuilt agent that we can import and step through, including the actions and what they mean.
 
 3. Navigate to [Control Hub](https://admin.webex.com){:target="\_blank"} as you attendee admin **<copy>wxcclabs+admin_ID<w class="attendee"></w>@gmail.com</copy>** with the password provided to you.
 
