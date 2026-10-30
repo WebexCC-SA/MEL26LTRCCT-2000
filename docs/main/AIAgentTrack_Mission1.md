@@ -37,14 +37,9 @@ Password has been provided to you.
 
 2. Navigate to [Control Hub](https://admin.webex.com){:target="\_blank"} as you attendee admin **<copy>wxcclabs+admin_ID<w class="attendee"></w>@gmail.com</copy>** with the password provided to you.
 
-3. Click on Contact Center and navigate to AI Agent
+3. Click on Contact Center and from the left side navigation panel, and under **Overview > Quick Links**, click on **Webex AI Agent**.
 
 <details>![Profiles](../graphics/Lab1_AI_Agent/1.11.gif.mov)</details>
-
-4. Microsoft office is not installed on this PC so you cannot open the file directly to review it. So please review the screenshots below to understand the file content that you will be using for you Knowledge base.
-   ![Profiles](../graphics/Lab1_AI_Agent/Knowledge1.png)
-   ![Profiles](../graphics/Lab1_AI_Agent/Knowledge2.png)
-   ![Profiles](../graphics/Lab1_AI_Agent/Knowledge3.png)
 
 3. Go to [Webex Control Hub](https://admin.webex.com){:target="\_blank"}.
 
