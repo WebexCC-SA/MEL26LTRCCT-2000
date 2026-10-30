@@ -35,13 +35,13 @@ Password has been provided to you.
 
 1. In this first step, you will define the "brain" and personality of your AI Agent. You will configure the core identity of Alex, setting the professional and secure tone required for financial interactions. This section covers the implementation of the System Prompt, where you will establish the strict sequential logic—from name verification to debt disclosure—ensuring the agent acts as a secure first-line filter for Webex Financial Group.
 
-2. Navigate to [Control Hub](https://admin.webex.com){:target="\_blank"} as you attendee admin > Admin: **<copy>wxcclabs+admin_ID<w class="attendee"></w>@gmail.com</copy>**
+2. Navigate to [Control Hub](https://admin.webex.com){:target="\_blank"} as you attendee admin **<copy>wxcclabs+admin_ID<w class="attendee"></w>@gmail.com</copy>** with the password provided to you.
 
-3. Click on Contact Center
+3. Click on Contact Center and navigate to AI Agent
 
-<details>![Profiles](../graphics/Lab1_AI_Agent/nav_ch_cc_aiagent.mov)</details>
+<details>![Profiles](../graphics/Lab1_AI_Agent/1.11.gif.mov)</details>
 
-3. Microsoft office is not installed on this PC so you cannot open the file directly to review it. So please review the screenshots below to understand the file content that you will be using for you Knowledge base.
+4. Microsoft office is not installed on this PC so you cannot open the file directly to review it. So please review the screenshots below to understand the file content that you will be using for you Knowledge base.
    ![Profiles](../graphics/Lab1_AI_Agent/Knowledge1.png)
    ![Profiles](../graphics/Lab1_AI_Agent/Knowledge2.png)
    ![Profiles](../graphics/Lab1_AI_Agent/Knowledge3.png)
