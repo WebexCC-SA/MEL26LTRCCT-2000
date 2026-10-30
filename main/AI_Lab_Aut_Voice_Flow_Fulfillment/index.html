@@ -1,0 +1,1540 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="LTRCCT-2000: Hands-on AI in Action with Webex Contact Center: Enhancing Self-Service, Agent Assistance &amp; Customer Insights">
+      
+      
+        <meta name="author" content="Kevin Simpson, Mykola Danylchuk">
+      
+      
+      
+        <link rel="prev" href="../AI_Lab_Aut_MissionX/">
+      
+      
+        <link rel="next" href="../AI_Lab_Aut_Mission2/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../template_assets/cisco_logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>Mission 3: Configure Fulfillment Using Voice Flow - LTRCCT-2000: Hands-on AI in Action with Webex Contact Center: Enhancing Self-Service, Agent Assistance &amp; Customer Insights</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#mission-3-configure-fulfillment-action-and-create-an-order-using-voice-flow" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="LTRCCT-2000: Hands-on AI in Action with Webex Contact Center: Enhancing Self-Service, Agent Assistance &amp; Customer Insights" class="md-header__button md-logo" aria-label="LTRCCT-2000: Hands-on AI in Action with Webex Contact Center: Enhancing Self-Service, Agent Assistance &amp; Customer Insights" data-md-component="logo">
+      
+  <img src="../../template_assets/cisco_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LTRCCT-2000: Hands-on AI in Action with Webex Contact Center: Enhancing Self-Service, Agent Assistance &amp; Customer Insights
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Mission 3: Configure Fulfillment Using Voice Flow
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../overview/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../AI_Lab_Overview/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Autonomous AI
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="LTRCCT-2000: Hands-on AI in Action with Webex Contact Center: Enhancing Self-Service, Agent Assistance &amp; Customer Insights" class="md-nav__button md-logo" aria-label="LTRCCT-2000: Hands-on AI in Action with Webex Contact Center: Enhancing Self-Service, Agent Assistance &amp; Customer Insights" data-md-component="logo">
+      
+  <img src="../../template_assets/cisco_logo.png" alt="logo">
+
+    </a>
+    LTRCCT-2000: Hands-on AI in Action with Webex Contact Center: Enhancing Self-Service, Agent Assistance &amp; Customer Insights
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2">
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10c0-1.16-.21-2.31-.61-3.39l-1.6 1.6c.14.59.21 1.19.21 1.79a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8c.6 0 1.2.07 1.79.21L15.4 2.6C14.31 2.21 13.16 2 12 2m7 0-4 4v1.5l-2.55 2.55C12.3 10 12.15 10 12 10a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2c0-.15 0-.3-.05-.45L16.5 9H18l4-4h-3zm-7 4a6 6 0 0 0-6 6 6 6 0 0 0 6 6 6 6 0 0 0 6-6h-2a4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Lab Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PreRequisites/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10c0-1.16-.21-2.31-.61-3.39l-1.6 1.6c.14.59.21 1.19.21 1.79a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8c.6 0 1.2.07 1.79.21L15.4 2.6C14.31 2.21 13.16 2 12 2m7 0-4 4v1.5l-2.55 2.55C12.3 10 12.15 10 12 10a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2c0-.15 0-.3-.05-.45L16.5 9H18l4-4h-3zm-7 4a6 6 0 0 0-6 6 6 6 0 0 0 6 6 6 6 0 0 0 6-6h-2a4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Access your Lab Environment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked="">
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Autonomous AI
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Autonomous AI
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked="">
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Autonomous AI Agent
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Autonomous AI Agent
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_1" checked="">
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_1" id="__nav_3_1_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lab Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Lab Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AI_Lab_Overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lab overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AIAgentTrack_Mission1/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 2H4v2l5.81 4.36a7.004 7.004 0 0 0-4.46 8.84 6.996 6.996 0 0 0 8.84 4.46 7 7 0 0 0 0-13.3L20 4zm-5.06 17.5L12 17.78 9.06 19.5l.78-3.33-2.59-2.24 3.41-.29L12 10.5l1.34 3.14 3.41.29-2.59 2.24z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Mission 1: Create AI Autonomous Agent
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AI_Lab_Aut_MissionX/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 2H4v2l5.81 4.36a7.004 7.004 0 0 0-4.46 8.84 6.996 6.996 0 0 0 8.84 4.46 7 7 0 0 0 0-13.3L20 4zm-5.06 17.5L12 17.78 9.06 19.5l.78-3.33-2.59-2.24 3.41-.29L12 10.5l1.34 3.14 3.41.29-2.59 2.24z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Mission 2: Integrating the AI Agent with Flow for Voice Calls
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 2H4v2l5.81 4.36a7.004 7.004 0 0 0-4.46 8.84 6.996 6.996 0 0 0 8.84 4.46 7 7 0 0 0 0-13.3L20 4zm-5.06 17.5L12 17.78 9.06 19.5l.78-3.33-2.59-2.24 3.41-.29L12 10.5l1.34 3.14 3.41.29-2.59 2.24z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Mission 3: Configure Fulfillment Using Voice Flow
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 2H4v2l5.81 4.36a7.004 7.004 0 0 0-4.46 8.84 6.996 6.996 0 0 0 8.84 4.46 7 7 0 0 0 0-13.3L20 4zm-5.06 17.5L12 17.78 9.06 19.5l.78-3.33-2.59-2.24 3.41-.29L12 10.5l1.34 3.14 3.41.29-2.59 2.24z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Mission 3: Configure Fulfillment Using Voice Flow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mission-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mission overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Build">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#task-1-configure-action-in-the-ai-studio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 1. Configure Action in the AI Studio
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-3-configure-fulfillment-logic-in-the-voice-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 3. Configure fulfillment logic in the Voice flow.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-4-report-the-order-details-to-analyzer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 4. Report the order details to Analyzer.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-5-configure-sms-confirmation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 5. Configure SMS Confirmation.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-6-read-only-understand-sms-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 6. (Read Only). Understand SMS configuration.
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AI_Lab_Aut_Mission2/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 2H4v2l5.81 4.36a7.004 7.004 0 0 0-4.46 8.84 6.996 6.996 0 0 0 8.84 4.46 7 7 0 0 0 0-13.3L20 4zm-5.06 17.5L12 17.78 9.06 19.5l.78-3.33-2.59-2.24 3.41-.29L12 10.5l1.34 3.14 3.41.29-2.59 2.24z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Mission 4: (<span style="color: red;"><strong>Read Only</strong></span>) Configure Fulfillment Using Webex Connect Flow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AI_Lab_Aut_Mission_Transfer/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 2H4v2l5.81 4.36a7.004 7.004 0 0 0-4.46 8.84 6.996 6.996 0 0 0 8.84 4.46 7 7 0 0 0 0-13.3L20 4zm-5.06 17.5L12 17.78 9.06 19.5l.78-3.33-2.59-2.24 3.41-.29L12 10.5l1.34 3.14 3.41.29-2.59 2.24z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Mission 5: Configure Transfer Action for a Specific Queue
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AI_Lab_Aut_Mission_Transfer2/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 2H4v2l5.81 4.36a7.004 7.004 0 0 0-4.46 8.84 6.996 6.996 0 0 0 8.84 4.46 7 7 0 0 0 0-13.3L20 4zm-5.06 17.5L12 17.78 9.06 19.5l.78-3.33-2.59-2.24 3.41-.29L12 10.5l1.34 3.14 3.41.29-2.59 2.24z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Mission 6: Configure Transfer Action for Webex AI Agent
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AI_Lab_Aut_Mission_MCP/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 2H4v2l5.81 4.36a7.004 7.004 0 0 0-4.46 8.84 6.996 6.996 0 0 0 8.84 4.46 7 7 0 0 0 0-13.3L20 4zm-5.06 17.5L12 17.78 9.06 19.5l.78-3.33-2.59-2.24 3.41-.29L12 10.5l1.34 3.14 3.41.29-2.59 2.24z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Mission 7: Configure Action with MCP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AI_Lab_Aut_Mission.Language/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 2H4v2l5.81 4.36a7.004 7.004 0 0 0-4.46 8.84 6.996 6.996 0 0 0 8.84 4.46 7 7 0 0 0 0-13.3L20 4zm-5.06 17.5L12 17.78 9.06 19.5l.78-3.33-2.59-2.24 3.41-.29L12 10.5l1.34 3.14 3.41.29-2.59 2.24z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Mission 8: (<span style="color: red;"><strong>Optional</strong></span>) Customize AI Agent Language
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AI_Lab_Aut_Conclusion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conclusion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="mission-3-configure-fulfillment-action-and-create-an-order-using-voice-flow">Mission 3: Configure Fulfillment Action and create an order using <strong>Voice Flow</strong>.</h1>
+<p><strong></strong></p><details><summary><strong>What is fulfilment Action? <span style="color: orange;"></span></strong></summary><p></p>
+<p>Fulfillment Action is a task that an AI agent performs by understanding user intents and completes by connecting to external systems over API. </p>
+<h2 id="_1"></h2></details>
+<h2 id="mission-overview">Mission overview</h2>
+<p>In this Mission you will be using the Voice flow to execute the API call to create teh order in order to complete the AI Agent Fulfillment. </p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/Fulfilment.png" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/Fulfilment.png"></a></p>
+<hr>
+<h2 id="build">Build</h2>
+<h3 id="task-1-configure-action-in-the-ai-studio">Task 1. Configure Action in the AI Studio</h3>
+<ol>
+<li>
+<p>Go to <strong>Webex AI Agent AI</strong> Studio Portal.
+   <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/2.14.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/2.14.gif"></a></p>
+</li>
+<li>
+<p>Select your AI agent with name <strong><copy><w class="attendee"></w>_2000_AutoAI_Lab</copy></strong> that you created earlier and go to <strong>Actions</strong>. You will see one Action is already created by default for the Agent Handover. We will now create few more actions.
+   <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/2.17.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/2.17.gif"></a></p>
+</li>
+<li>
+<p>Click on create <b>New Action</b>. From the drop-down option, select <strong>Fulfillment</strong>.
+   <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/2.18.png" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/2.18.png"></a></p>
+</li>
+<li>
+<p>Configure it with name <strong><em><copy>Create_New_Order</copy></em></strong> and the Action description <strong><em><copy>Collect order details, delivery address, total and response with the id number once the order is completed. The request will contain the order details. From the order details let the customer know the order ID.</copy></em></strong>. In the Action score select <b>Slot filling and fulfillment</b>.
+   <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/2.18a.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/2.18a.gif"></a></p>
+</li>
+<li>
+<p>Scroll down and click to create <strong>New input entity</strong>. Fill up the table with the following and then click on <strong>Add</strong>. <br></p>
+<blockquote>
+<p>Entity Name: <strong><em><copy>address</copy></em></strong> <br>
+Entity Type: <b>string</b> <br>
+Description: <strong><em><copy>Collect the customer's delivery address</copy></em></strong><br>
+Example: <strong><em><copy>548 Catalina Drive, Cary, NC 27515</copy></em></strong> <br>
+Required: <b>Yes</b>
+   <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/2.19.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/2.19.gif"></a></p>
+</blockquote>
+</li>
+<li>
+<p>By following the same pattern, create an entity that specifies whether the customer requires delivery. <br></p>
+<blockquote>
+<p>Entity Name: <strong><em><copy>delivery</copy></em></strong><br>
+Entity Type: <b>string</b> <br>
+Description: <strong><em><copy>Check if the customer needs delivery or not. Event if they want to proceed with order without specifying the delivery details. If the customer wants to confirm the order but didn't specify if they need delivery or not, ask one more time if they need the delivery or not.</copy></em></strong><br>
+Example: <strong><em><copy>Yes</copy></em></strong><br>
+Example: <strong><em><copy>No</copy></em></strong><br>
+Required: <b>Yes</b></p>
+</blockquote>
+</li>
+<li>
+<p>By following the same pattern, create an entity to collect the customer's phone number.<br></p>
+<blockquote>
+<p>Entity Name: <strong><em><copy>phoneNumber</copy></em></strong><br>
+Entity Type: <b>string</b> <br>
+Description: <strong><em><copy>Collect customer's phone number. Before the customer complete the order, ask if they would like to receive confirmation over the SMS. If so, collect the phone number.</copy></em></strong><br>
+Example: <strong><em><copy>3477579861</copy></em></strong><br>
+Required: <b>Yes</b></p>
+</blockquote>
+</li>
+<li>
+<p>By following the same pattern, create an entity to collect the customer's order details.<br></p>
+<blockquote>
+<p>Entity Name: <strong><em><copy>orderDetails</copy></em></strong><br>
+Entity Type: <b>string</b> <br>
+Description: <strong><em><copy>Collect the flowers and bouquets information that customer orders. Make sure to do correct math. If one rose is 20 dollars and the customer would like buy 9 roses then the price should be 180 dollars. Don't use double quotes (") in the generated responses.</copy></em></strong><br>
+Example: <strong><em><copy>Romantic Roses standard bouquet and one more bouquet with 9 roses</copy></em></strong><br>
+Required: <b>Yes</b></p>
+</blockquote>
+</li>
+<li>
+<p>By following the same pattern, create an entity to store the total price information of the order.<br></p>
+<blockquote>
+<p>Entity Name: <strong><em><copy>orderTotal</copy></em></strong><br>
+Entity Type: <b>string</b> <br>
+Description: <strong><em><copy>After the customer inform if they need delivery or not, and confirm that they would like to proceed with completing the order, collect the Total information and assigned it to this slot. Always use the number for the total. For example use 500 $ but not five hundred dollars.</copy></em></strong><br>
+Example: <strong><em><copy>150 dollars, 70 dollars</copy></em></strong><br>
+Required: <b>Yes</b></p>
+</blockquote>
+</li>
+<li>
+<p>By following the same pattern, create an entity to store the order status information.<br></p>
+<blockquote>
+<p>Entity Name: <strong><em><copy>status</copy></em></strong><br>
+Entity Type: <b>string</b> <br>
+Description: <strong><em><copy>Always create it as "new"</copy></em></strong><br>
+Example: <strong><em><copy>new</copy></em></strong><br>
+Required: <b>Yes</b></p>
+</blockquote>
+</li>
+<li>
+<p>At this point you should see 6 created entities. Please double check that your configuration matches the screenshot below.
+    <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/2.61.png" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/2.61.png"></a></p>
+</li>
+<li>
+<p>Scroll down and for the <strong>Fulfillment</strong> option select **Manage in the source flow (voice only). Click <strong>Save</strong>
+   <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.2.png" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.2.png"></a></p>
+</li>
+<li>
+<p><strong>Publish</strong> your AI Agent. 
+   <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.33.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.33.gif"></a></p>
+</li>
+</ol>
+<h3 id="task-3-configure-fulfillment-logic-in-the-voice-flow">Task 3. Configure fulfillment logic in the Voice flow.</h3>
+<ol>
+<li>
+<p>In <strong>Control Hub</strong> got to Flows and open you flow with name <strong><copy>AutonomousAI_Flow_2000_<w class="attendee"></w></copy></strong>. Click on <strong>Edit</strong>.
+   <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.3.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.3.gif"></a></p>
+</li>
+<li>
+<p>Remove <strong>DisconnectContact</strong> node. 
+   <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.4.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.4.gif"></a></p>
+</li>
+<li>
+<p>Create flow string variable with name <strong><copy>event_name</copy></strong> and empty default value.
+   <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.5.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.5.gif"></a> </p>
+</li>
+<li>
+<p>Create flow string variable with name <strong><copy>order_request_details</copy></strong> and empty default value.
+   <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.6.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.6.gif"></a> </p>
+</li>
+<li>
+<p>Add <strong>SetVariable</strong> node from the left side of flow designer to the field. Connect <strong>VirtualAgentV2</strong> node to the <strong>SetVariable</strong> node. 
+   <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.7.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.7.gif"></a> </p>
+</li>
+<li>
+<p>Click on the <strong>SetVariable</strong> that you just created and configure your <strong>event_name</strong> variable to be assigned with <strong>VirtualAgentV2....StateEventName</strong> variable. <br>
+   <strong>Note:</strong> <em>This event name will be the same as your Action name from the AI Agent Studio that is used for the fulfillment.</em>
+   <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.8.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.8.gif"></a></p>
+</li>
+<li>
+<p>Add one more <strong>SetVariable</strong> node and connect them in series.
+   <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.9.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.9.gif"></a> </p>
+</li>
+<li>
+<p>We will need to assign the metadata from AI agent to the <strong>order_request_details</strong> string variable. To do so click on <strong>VirtualAgentV2</strong> node, on the right side scroll down until you will see Activity output variable. Copy the name of the variable related to MetaData. Go to your second SetVariable node and configure <strong>order_request_details</strong> with value of the Metadata that you copy inside of the {{}}. See the gif below. 
+   <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.10.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.10.gif"></a> </p>
+</li>
+<li>
+<p>Add <strong>Case</strong> node and connect <strong>SetVariable</strong> node to the <strong>Case</strong> node.<br>
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.11.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.11.gif"></a> </p>
+</li>
+<li>
+<p>Add <strong>Disconnect Contact</strong> and assign the <strong>Default</strong> output on <strong>Case</strong> node to the <strong>Disconnect Contact</strong>
+   <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.12.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.12.gif"></a> </p>
+</li>
+<li>
+<p>Click on <strong>Case</strong> node. Select <strong>event_name</strong> as the Case Variable. Remove the second Link Description. Keep only one Link Description, as for now you have only one action for fulfillment. In the Link Description provide the name of your action: <strong><copy>Create_New_Order</copy></strong>.
+   <strong>Note:</strong> <em>If you add more actions later, the Case node is used as the distribution logic for different fulfillment requests.</em>
+   <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.13.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.13.gif"></a></p>
+</li>
+<li>
+<p>Add <strong>HTTP Request</strong> node and connect the <strong>Case</strong> output link to the <strong>HTTP Request</strong> node.
+   <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.14.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.14.gif"></a></p>
+</li>
+<li>
+<p>Configure the <strong>HTTP Request</strong> with the following:</p>
+<ul>
+<li>Use authenticated endpoint: <strong>Off</strong></li>
+<li>Request URL: <strong><copy>https://67e9aa0bbdcaa2b7f5b9ed62.mockapi.io/customerOrder</copy></strong></li>
+<li>Method: <strong>POST</strong></li>
+<li>Content type: <strong>Application/JSON</strong></li>
+<li>Request body: <strong><copy>{{order_request_details}}</copy></strong>
+   <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.15.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.15.gif"></a></li>
+</ul>
+</li>
+<li>
+<p>Connect <strong>HTTP Request</strong> node to <strong>VirtuaAgentV2</strong> node.
+   <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.16.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.16.gif"></a></p>
+</li>
+<li>
+<p>Click on <strong>VirtualAgentV2</strong> node, open <strong>State Event</strong> and configure the <strong>Event Name</strong> as <strong><copy>{{event_name}}</copy></strong>. In this case when the interaction returns to the AI agent it stays in the same session and AI agent continue the conversation accordingly. 
+   <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.17.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.17.gif"></a></p>
+</li>
+<li>
+<p>Next you need to bring the API call results back to your AI agent. For this, click on the <strong>HTTP Request</strong> node, scroll down on the right side and copy the name of the HTTPRequest...ResponseBody. Then go do <strong>VirtualAgentV2</strong> node, open the <strong>State Events</strong> insert the Http body response to the <strong>Event Data</strong> inside of the {{}}. See the steps on the gif below. 
+   <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.17_.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.17_.gif"></a></p>
+</li>
+<li>
+<p>Enable decryption in the flow so you can monitor your further test calls details. 
+   <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.19.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.19.gif"></a></p>
+</li>
+<li>
+<p><strong>Validate</strong> and <strong>Publish</strong> the flow with the <strong>Latest</strong> tag. 
+   <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.18.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.18.gif"></a></p>
+</li>
+<li>
+<p>Place test call to your test number. Ask to order flowers, provide the requested information. You should hear that the order was completed successfully. Trace the call in the voice flow to make sure HTTP request was successful. Click on HTTP Request node, decrypt the results to make sure you got 201 status result. 
+   <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.20.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.20.gif"></a></p>
+</li>
+</ol>
+<h3 id="task-4-report-the-order-details-to-analyzer">Task 4. Report the order details to Analyzer.</h3>
+<ol>
+<li>
+<p>Add Global Variable with name <copy><strong>Flower_order_details</strong></copy> to the flow. 
+   <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.21.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.21.gif"></a></p>
+</li>
+<li>
+<p>Add <strong>SetVariable</strong> node and connect it between <strong>HTTP Request</strong> node and <strong>VirtualAgentV2</strong> nodes. 
+   <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.22.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.22.gif"></a></p>
+</li>
+<li>
+<p>Click on <strong>Http Request</strong> node. On the right side scroll down to the Activity output variables, and copy the name that is related to Response Body. Then go to the <strong>SetVariable</strong> block and configure it with Variable <strong>Flower_order_details</strong> and the value that you copied from HTTP Request node inside of the {{}}. See the gif below. 
+   <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.23.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.23.gif"></a></p>
+</li>
+<li>
+<p>Validate and publish the flow. 
+   <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.24.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.24.gif"></a></p>
+</li>
+<li>
+<p>Place one more test call and order flowers. </p>
+</li>
+<li>
+<p>Open the prebuilt <a href="https://analyzer-v2.wxcc-us1.cisco.com/analyzer/view/visualization?tId=e56f00d4-98d8-4b62-a165-d05a41243d98&amp;rId=303296" target="_blank">Analyzer Report</a>. You might need to enter your admin login credentials. Once logged in, you should see your call in the list. 
+   <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.25.png" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.25.png"></a></p>
+</li>
+</ol>
+<h3 id="task-5-configure-sms-confirmation">Task 5. Configure SMS Confirmation.</h3>
+<ol>
+<li>
+<p>In the flow add one more <strong>HTTP Request</strong> node and connect it between <strong>SetVariable</strong> node and <strong>VirtualAgentV2</strong> nodes.
+   <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.26.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.26.gif"></a></p>
+</li>
+<li>
+<p>Configure the <strong>HTTP Request</strong> with the following:</p>
+<ul>
+<li>Use authenticated endpoint: <strong>Off</strong></li>
+<li>Request URL: <strong><copy>https://hooks.us.webexconnect.io/events/93VKZM1N24</copy></strong></li>
+<li>Method: <strong>POST</strong></li>
+<li>Content type: <strong>Application/JSON</strong></li>
+<li>Request body: Body output variable from HTTP request node that you use to create order. The same one that you was using for <strong>SetVariable</strong> node to post the data to Analyzer. See the gif below. <strong>Put it inside of {{}}</strong>.
+   <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.27.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.27.gif"></a></li>
+</ul>
+</li>
+<li>
+<p>Validate and Publish the flow. 
+       <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.33.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.33.gif"></a></p>
+</li>
+<li>
+<p>Place test call, create order with a number for SMS confirmation and you should receive the SMS. </p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.33a.png" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.33a.png"></a></p>
+</li>
+</ol>
+<h3 id="task-6-read-only-understand-sms-configuration">Task 6. (<span style="color: red;"><strong>Read Only</strong></span>). Understand SMS configuration.</h3>
+<p>We have preconfigured the SMS flow in this lab that can be triggered using Webhook. To understand the configuration:</p>
+<ol>
+<li>
+<p>From <strong>Control Hub</strong>, go to <strong>Contact Center</strong> &gt; <strong>Overview</strong> &gt; <strong>Webex Connect</strong>.
+       <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.28.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.28.gif"></a></p>
+</li>
+<li>
+<p>Open up Service <strong><copy>180_2000_Service_</copy></strong> &gt; <strong>Flows</strong>. This is lab proctor Service where Webhook was configured to trigger the SMS. 
+       <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.29.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.29.gif"></a></p>
+</li>
+<li>
+<p>Open the Flow <strong>SMS_Webhook</strong>. Please don't do any changes as everybody on this lab are using this flow. This Task is read only, no configurations are needed. 
+       <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.30.gif" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.30.gif"></a></p>
+</li>
+<li>
+<p>Double click on <strong>Configure Webhook</strong> node. You can see the Webhook URL that we configured in our voice flow and the variables that we are expecting in the body request. 
+       <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.31.png" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.31.png"></a></p>
+</li>
+<li>
+<p>Double click on <strong>SMS</strong> node. You will see that the number is carried on from <strong>Webhook</strong> as well as other variables in the <strong>Message</strong> section. The <strong>From Number</strong> 12066478712 is the PSTN provisioned number for SMS. 
+       <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../graphics/Lab1_AI_Agent/19.32.png" data-title="Profiles" data-desc-position="top"><img alt="Profiles" src="../../graphics/Lab1_AI_Agent/19.32.png"></a></p>
+</li>
+</ol>
+<p style="text-align:center"><strong>Congratulations, you have officially completed the Autonomous AI Agent lab! 🎉🎉 </strong></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden="">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
+        
+          
+          <a href="../AI_Lab_Aut_MissionX/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Mission 2: Integrating the AI Agent with Flow for Voice Calls">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Mission 2: Integrating the AI Agent with Flow for Voice Calls
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../AI_Lab_Aut_Mission2/" class="md-footer__link md-footer__link--next" aria-label="Next: Mission 4: (&lt;span style=&quot;color: red;&quot;&gt;&lt;strong&gt;Read Only&lt;/strong&gt;&lt;/span&gt;) Configure Fulfillment Using Webex Connect Flow">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Mission 4: (<span style="color: red;"><strong>Read Only</strong></span>) Configure Fulfillment Using Webex Connect Flow
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2026 Cisco
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.instant", "navigation.top", "navigation.footer", "search.suggest", "content.code.copy", "toc.integrate"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+        <script src="../../template_assets/js/newLoad.js"></script>
+      
+        <script src="../../template_assets/js/setInfo.js"></script>
+      
+        <script src="../../javascripts/read-only-nav.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
