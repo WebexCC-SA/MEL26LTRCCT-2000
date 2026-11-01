@@ -28,6 +28,7 @@ icon: material/bullseye-arrow
 > Supervisor: **<copy>wxcclabs+supvr_ID<w class="attendee"></w>@gmail.com</copy>**
 
 > Webex App has been pre-installed on your Lab PC
+   >> Login with your Admin: **<copy>wxcclabs+admin_ID<w class="attendee"></w>@gmail.com</copy>** username and password
 
 > Inbound Phone Number: Assigned to your Channel **<copy><w class="attendee"></w>\_Channel</copy>**
 
