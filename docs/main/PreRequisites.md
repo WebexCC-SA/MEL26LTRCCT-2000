@@ -31,6 +31,7 @@ icon: material/bullseye-arrow
    >> Login with your Admin: **<copy>wxcclabs+admin_ID<w class="attendee"></w>@gmail.com</copy>** username and password
 
 > Inbound Phone Number: Assigned to your Channel **<copy><w class="attendee"></w>\_Channel</copy>**
+> [Airtable](https://airtable.com/appyHCipREdqlqiDe/shrQkcmfHDvxvFyHp){:target="\_blank"} Webmode Read-ONLY.
 
 More pre-configured entities will be mentioned during the lab missions if they have any.
 
