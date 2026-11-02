@@ -30,7 +30,8 @@ icon: material/bullseye-arrow
 > Webex App has been pre-installed on your Lab PC
    >> Login with your Admin: **<copy>wxcclabs+admin_ID<w class="attendee"></w>@gmail.com</copy>** username and password
 
-> Inbound Phone Number: Assigned to your Channel **<copy><w class="attendee"></w>\_Channel</copy>**
+> Inbound Phone Number: Assigned to your Channel **<copy><w class="attendee"></w>\_Channel</copy>** <br>
+
 > [Airtable](https://airtable.com/appyHCipREdqlqiDe/shrQkcmfHDvxvFyHp){:target="\_blank"} Webmode Read-ONLY.
 
 More pre-configured entities will be mentioned during the lab missions if they have any.
