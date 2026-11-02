@@ -35,6 +35,15 @@ icon: material/bullseye-arrow
 > [Airtable](https://airtable.com/appyHCipREdqlqiDe/shrQkcmfHDvxvFyHp){:target="\_blank"} Webmode Read-ONLY. <span style="color: red;">[IMPORTANT:] </span> Airtable CustomerID = Your Attendee ID = **<copy><w class="attendee"></w></copy>** <br>
 Use ONLY your row for data. We will come to this later <br>
 
+> You can access the shared Read-ONLY Airtable Repo using your email address specially made for this lab:
+Admin: **<copy>wxcclabsadmin_ID<w class="attendee"></w>@appinzip.com</copy>** <br>
+
+> [Check your email](https://webmail.appinzip.com){:target="\_blank"}
+Put in your email address from above. For example: wxcclabsadmin_ID010@appinzip.com
+Use the Password that has been provided to you.
+
+> You can find an email from domgonsa@cisco.com that has all the other details like: Entry Point, EP-DN etc.
+
 More pre-configured entities will be mentioned during the lab missions if they have any.
 
 ---
