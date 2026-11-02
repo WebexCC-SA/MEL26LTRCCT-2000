@@ -53,7 +53,7 @@ More pre-configured entities will be mentioned during the lab missions if they h
 1. Open the **Webex App** on your PC.
    ![Profiles](../graphics/Lab1_AI_Agent/18.1.gif)
 
-2. **Sign in** using the Admin credentials. (The same credentials you used to login to the Contorl Hub).
+2. **Sign in** using the Admin credentials - Admin: **<copy>wxcclabs+admin_ID<w class="attendee"></w>@gmail.com</copy>**. (The same credentials you used to login to the Contorl Hub).
    ![Profiles](../graphics/Lab1_AI_Agent/18.3.gif)
 
 3. If you receive a prompt to add an Address, click **Cancel**.
