@@ -32,10 +32,8 @@ icon: material/bullseye-arrow
 
 > Inbound Phone Number: Assigned to your Channel **<copy><w class="attendee"></w>\_Channel</copy>** <br>
 
-> [Airtable](https://airtable.com/appyHCipREdqlqiDe/shrQkcmfHDvxvFyHp){:target="\_blank"} Webmode Read-ONLY. <br>
-
-<span style="color: red;">[IMPORTANT] </span> CustomerID = Your Attendee ID = **<copy><w class="attendee"></w></copy>** <br>
-Use ONLY your row for data. <br>
+> [Airtable](https://airtable.com/appyHCipREdqlqiDe/shrQkcmfHDvxvFyHp){:target="\_blank"} Webmode Read-ONLY. <span style="color: red;">[IMPORTANT:] </span> Airtable CustomerID = Your Attendee ID = **<copy><w class="attendee"></w></copy>** <br>
+Use ONLY your row for data. We will come to this later <br>
 
 More pre-configured entities will be mentioned during the lab missions if they have any.
 
