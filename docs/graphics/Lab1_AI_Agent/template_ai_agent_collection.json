@@ -2,28 +2,25 @@
   "bot_type": "virtualagent",
   "configuration": {
     "ai_engine": {
-      "id": "PRO_US_2_0",
+      "id": "PRO_2_0_0",
       "type": "native"
     },
     "default_language": "en-AU",
-    "kb_ids": [
-      "6a2822b154309d7feea9b023"
-    ],
-    "llm_agent_description": "You are Alex, a Webex Financial Group AI agent. Your mission is to proactively resolve outstanding fees while maintaining a security-first posture. Guide customers through total or partial payments using secure NovaPay links and provide general information and account or transaction history upon request. Support account inquiries and transaction history. Maintain a firm, professional, and helpful tone. Handle contentions professionally, but immediately escalate to a human specialist if a customer disputes a transaction or suspects fraud.\n1. Identity\nRole Definition: You are Alex, a secure AI Agent for a Financial Group, specializing in fee collection and account management.\nTone: Professional, firm yet helpful, ensuring customers understand their financial obligations.\n\n2. Context\nBackground: You handle inbound and outbound calls regarding a fees due nearing due date. The interaction is low-risk and security-focused.\nEnvironment: Voice line with potential background noise. Keep responses clear and concise.\n\n3. Tasks:\n\nName Verification: Confirm the customer's name. If the person is not the right one, ask for the right person.\nAuthentication Consent: \"For your security, I need to perform an authentication check. Do you want to proceed?\"\nAuthentication: Execute [fetch_balance] with the users's {{phoneNumber}} to recover the PIN . If the phone number is not available, ask the customer. Then [authenticate_user]. Ask the user for the digits in the returned positions. Verify identity validating the user provided values with the PIN digits returned by the action. \nDebt Disclosure: Use [fetch_balance]  output to inform the customer of their balance and maturity date.\nPayment Negotiation: Offer total or partial payment options.\nPayment Execution: If accepted, execute [payment_session] and inform the customer a Payment URL has been sent to their email. Wait for payment confirmation.\nConfirmation: Use [confirm_payment] to verify payment and inform the customer of the result, including the amount paid the confirmation code and the remaining balance.\nAccount & Transaction Support: Use [fetch_transactions] to provide account info and up to five most recent transactions including the amount, date, vendor, and city for each transaction. \nGeneral Enquiries: Use the Knowledge Base for banking questions.If information is duplicated in different Knowledge Base sources, do not repeat the same information twice.\n\n4. Response Guidelines\nFormatting: Keep responses short and conversational. Avoid long lists.\nLanguage Style: Use clear, direct language regarding dates and amounts.\n\n5. Error Handling\nClarification: \"I didn’t catch that. Could you repeat?\"\nDefault Response: \"I’m not authorised for that. I can assist with payments or account balances.\"\nAction Failures: \"I’m experiencing a delay. Please hold while I refresh the information or connect you to a specialist.\"\n\n6. User Defined Guardrails\nStay within Webex Financial Group’s banking services.\nNever disclose personal customer data or security information like the PIN number.\n\n7. **Suspicious Escalation Logic:**\nIf a transaction is suspected by the customer, pull the recent transactions using the **[fetch_transactions]** actions. Attempt to identify the suspicious transaction before escalating to a human Specialist by using the **[dispute_transfer]** transfer action.\n\n8. **Investment Transfer Logic:**\nIf the customer wants to discuss investments, buy or sell stocks, check their portfolio, or inquire about market data, authenticate them and transfer to the Investment Advisor using the **[investment_transfer]** transfer action.",
+    "kb_ids": [],
+    "llm_agent_description": "You are Alex, a Webex Financial Group AI agent. Your mission is to proactively resolve outstanding fees while maintaining a security-first posture. Guide customers through total or partial payments using secure NovaPay links and provide general information and account or transaction history upon request. Support account inquiries and transaction history. Maintain a firm, professional, and helpful tone. Handle contentions professionally, but immediately escalate to a human specialist if a customer disputes a transaction or suspects fraud.\n\n1. Identity\nRole Definition: You are Alex, a secure AI Agent for a Financial Group, specialising in fee collection and account management.\nTone: Professional, firm yet helpful, ensuring customers understand their financial obligations.\n\n2. Context\nBackground: You handle inbound calls regarding an outstanding due nearing due date. The interaction is low-risk and security-focused.\nEnvironment: Voice line with potential background noise. Keep responses clear and concise.\n\n3. Tasks:\n\n3.1 Name Verification: Greet the customer warmly. Confirm the customer's name. If the person is not the right one, ask for the right person.\nName confirmation does not replace PIN authentication.\n\n3.2 Authentication Consent: \"For your security, I need to perform an authentication check. Do you want to proceed?\"\n3.3 Authentication: Execute [fetch_balance] with the users's {{nationalid}} to recover the PIN . If the national id number is not available, ask the customer. Then [auth_user]. Ask the user for the digits in the returned positions. Verify identity validating the user provided values with the PIN digits returned by the action. \n3.4 Outstanding Balance Disclosure: Use [fetch_balance]  output to inform the customer of their balance and due date.\n3.5 Payment Negotiation: Offer total or partial payment options.\n3.6 Payment Execution: If accepted, use the email address, RecordID for the customer from the [fetch_balance]  output and execute [payment_session] and inform the customer a Payment URL has been sent to their email. Wait for payment confirmation from the customer.\n3.7 Confirmation: Use [confirm_payment] to verify payment and inform the customer of the result, including the amount paid the confirmation code and the remaining balance.\n3.8 Account & Transaction Support: Use [fetch_transactions] to provide account info and up to five most recent transactions including the amount, date, vendor, and city for each transaction. \n3.9 General Enquiries: Use the Knowledge Base for banking questions.If information is duplicated in different Knowledge Base sources, do not repeat the same information twice.\n\n4. Response Guidelines\nFormatting: Keep responses short and conversational. Avoid long lists.\nLanguage Style: Use clear, direct language regarding dates and amounts.\n\n5. Error Handling\nClarification: \"I didn’t catch that. Could you repeat?\"\nDefault Response: \"I’m not authorised for that. I can assist with payments or account balances.\"\nAction Failures: \"I’m experiencing a delay. Please hold while I refresh the information or connect you to a specialist.\"\n\n6. User Defined Guardrails\nStay within Webex Financial Group’s banking services.\nNever disclose personal customer data or security information like the PIN number.\n\n7. **Suspicious Escalation Logic:**\nIf a transaction is suspected by the customer, pull the recent transactions using the **[fetch_transactions]** actions. Attempt to identify the suspicious transaction before escalating to a human Specialist by using the **[dispute_transfer]** transfer action.\n\n8. If the customer asks to speak to an agent, immediately escalate to a human agent through Agent handover action.",
     "llm_model": "1.0.0",
     "logo": "https://studio.aiagent-us1.cisco.com/static/assets/img/bot-logo/default-virtualagent.svg",
     "timezone": "Australia/Sydney",
     "transparency_configuration": {
-      "disable_reason": "just trying",
-      "enabled": false,
-      "message": "Hi, I’m an AI assistant. This interaction may be recorded and transcribed for troubleshooting purposes."
+      "enabled": true,
+      "message": "This interaction may be recorded and transcribed for troubleshooting purposes."
     },
     "voice_settings": {
       "advance_settings": {
         "global": {
           "delays_and_interruptions": {
-            "caller_turn_timeout": 1000,
-            "custom_no_input": 10,
+            "caller_turn_timeout": 3000,
+            "custom_no_input": 30,
             "customer_interruption": true,
             "eos_sensitivity": 500,
             "fulfilment_timeout": 30,
@@ -41,16 +38,16 @@
             "acknowledgement_frequency": "APPROPRIATE",
             "acknowledgement_length": "MEDIUM",
             "acknowledgement_style": "CONVERSATIONAL",
-            "custom_prompt": "",
+            "custom_prompt": "Do not interrupt the caller.\nWait for them to confirm payment.",
             "custom_vocabulary": [],
             "include_disfluencies": true,
-            "response_style": "ACTIVE"
+            "response_style": "CUSTOM"
           }
         }
       },
       "voices": [
         {
-          "displayName": "en-AU-Matilda",
+          "displayName": "en-AU-Mia",
           "gender": "FEMALE",
           "language": "English",
           "locale": "en-AU",
@@ -58,7 +55,7 @@
         }
       ]
     },
-    "welcome_message": "Hello, I´m Alex, a personal balance accountant from Webex Financial Group. Am I speaking with {{firstName}} {{lastName}}?"
+    "welcome_message": "Hello, this is Alex, an AI assistant with Webex Financial Group. May I confirm your name?"
   },
   "tools": [
     {
@@ -66,7 +63,7 @@
       "description": "Escalate the conversation to a human agent if the user asks for it.",
       "enabled": true,
       "fulfillment": {},
-      "id": "2dfd052b0db887e451172246d2263a6d",
+      "id": "9fb204f671d73e1720d1df685ee10bbc",
       "name": "Agent handover",
       "slots": [],
       "slots_view": "table",
@@ -84,8 +81,8 @@
           "type": "ci_bearer_token"
         },
         "flow_builder": "connect",
-        "flow_id": 91552,
-        "flow_name": "authenticate_user",
+        "flow_id": 100929,
+        "flow_name": "auth_user",
         "output_entities": {
           "parameters": {
             "properties": {},
@@ -97,12 +94,12 @@
         "output_entities_format": "table",
         "output_entities_text": "",
         "output_entities_view": "table",
-        "service_id": "60796",
-        "service_name": "domgonsa",
+        "service_id": "88757",
+        "service_name": "CiscoLiveMel2026",
         "type": "flow",
-        "webhook_url": "https://hooks.us.webexconnect.io/flows/91552/trigger/aiagent"
+        "webhook_url": "https://hooks.us.webexconnect.io/flows/100929/trigger/aiagent"
       },
-      "id": "39c23999ba35576b3d00808c59817078",
+      "id": "3c8b0798078fada0ed4821dbaab46b2c",
       "input_entities": {
         "parameters": {
           "properties": {
@@ -129,7 +126,7 @@
       "action_type": "fulfilment",
       "bot_id": 72720,
       "capability": "slot_filling_with_fulfillment",
-      "description": "Using the customer's phone number, fetch the following details from the Customer DB: \n    - RecordID\n    - CustomerID\n    - PremiumDue\n    - DueDate\n    - Customer Information (FirstName, LastName, DOB)\n    - PIN\n    - Cases\n    - RewardsTier\n    - PaymentMethod\n    - Email",
+      "description": "Using the customer's nationalid, fetch the following details from the Customer DB: \n    - RecordID\n    - CustomerID\n    - OutstandingDue\n    - DueDate\n    - Customer Information (FirstName, LastName, DOB)\n    - PIN\n    - Cases\n    - RewardsTier\n    - PaymentMethod\n    - Email\n    - Investments\n    - PhoneNumber\n    - Frequency\n    - Positions",
       "enabled": true,
       "fulfillment": {
         "authentication": {
@@ -137,7 +134,7 @@
           "type": "ci_bearer_token"
         },
         "flow_builder": "connect",
-        "flow_id": 91361,
+        "flow_id": "100932",
         "flow_name": "fetch_balance",
         "output_entities": {
           "parameters": {
@@ -150,25 +147,25 @@
         "output_entities_format": "table",
         "output_entities_text": "",
         "output_entities_view": "table",
-        "service_id": "60796",
-        "service_name": "domgonsa",
+        "service_id": "88757",
+        "service_name": "CiscoLiveMel2026",
         "type": "flow",
-        "webhook_url": "https://hooks.us.webexconnect.io/flows/91361/trigger/aiagent"
+        "webhook_url": "https://hooks.us.webexconnect.io/flows/100932/trigger/aiagent"
       },
-      "id": "7b45cf7e9699bd0549a98fddaf1f0669",
+      "id": "111458f2977193f1d65b664e46ec2239",
       "input_entities": {
         "parameters": {
           "properties": {
-            "phoneNumber": {
-              "description": "Customer's Phone Number",
+            "nationalid": {
+              "description": "Customer's 5 digit national id",
               "examples": [
-                "435044347"
+                "58293"
               ],
               "type": "string"
             }
           },
           "required": [
-            "phoneNumber"
+            "nationalid"
           ],
           "secure": [],
           "type": "object"
@@ -182,7 +179,7 @@
       "action_type": "fulfilment",
       "bot_id": 72720,
       "capability": "slot_filling_with_fulfillment",
-      "description": "Generates a NovaPay payment session for the amount selected by the customer. The payment session URL is sent to the customer via email.",
+      "description": "Generates a NovaPay payment session for the amount selected by the customer. The payment session URL is sent to the customer email that was obtained as part of fetch_balance action.",
       "enabled": true,
       "fulfillment": {
         "authentication": {
@@ -190,7 +187,7 @@
           "type": "ci_bearer_token"
         },
         "flow_builder": "connect",
-        "flow_id": 92389,
+        "flow_id": "101019",
         "flow_name": "payment_session",
         "output_entities": {
           "parameters": {
@@ -203,16 +200,16 @@
         "output_entities_format": "table",
         "output_entities_text": "",
         "output_entities_view": "table",
-        "service_id": "60796",
-        "service_name": "domgonsa",
+        "service_id": "88757",
+        "service_name": "CiscoLiveMel2026",
         "type": "flow",
-        "webhook_url": "https://hooks.us.webexconnect.io/flows/92389/trigger/aiagent"
+        "webhook_url": "https://hooks.us.webexconnect.io/flows/101019/trigger/aiagent"
       },
-      "id": "12dc7b5f71c3273c84ad9205ce955085",
+      "id": "82f75e55b9cdad4306fee64dbd61ecee",
       "input_entities": {
         "parameters": {
           "properties": {
-            "PremiumDue": {
+            "OutstandingDue": {
               "description": "The customer selected amount for payment",
               "examples": [
                 "200"
@@ -226,19 +223,27 @@
               ],
               "type": "string"
             },
+            "customerRef": {
+              "description": "The Airtable Customer Reference number is the RecordID that was got from [fetch_balance}",
+              "examples": [
+                "recNyZKCvIBJLXsh0"
+              ],
+              "type": "string"
+            },
             "email": {
               "description": "A valid customer email address where the payment URL is to be sent",
               "examples": [
-                "fdefdegmail+1@gmail.com"
+                "wxcclabs+admin_ID010@gmail.com"
               ],
               "pattern": "\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*",
               "type": "email"
             }
           },
           "required": [
-            "email",
-            "PremiumDue",
-            "SessionId"
+            "OutstandingDue",
+            "SessionId",
+            "customerRef",
+            "email"
           ],
           "secure": [],
           "type": "object"
@@ -252,7 +257,7 @@
       "action_type": "fulfilment",
       "bot_id": 72720,
       "capability": "slot_filling_with_fulfillment",
-      "description": "Confirms payment with NovaPay service once the customer confirms completion of the transaction, and updates the remaining balance in the customer DB. The action returns payment details: amount payed, the last 4 digits of the card and the Novapay confirmation code. The result of the operation is determined by the correlation of the {{paymentStatus}} and the {{balaceUpdate}} values.",
+      "description": "Verifies a customer-reported payment by checking the saved NovaPay payment session ID. Treat the payment as confirmed only when {{paymentStatus}} is paid. After confirmation, update the customer’s remaining balance using the saved customerRef. Report the amount paid, card’s last four digits, and NovaPay confirmation code. Mark the operation complete only when the payment is confirmed and {{balanceUpdate}} indicates the customer record was updated. If the payment is confirmed but the balance update fails, explain that the payment succeeded but the account update is pending; do not ask the customer to pay again.",
       "enabled": true,
       "fulfillment": {
         "authentication": {
@@ -260,7 +265,7 @@
           "type": "ci_bearer_token"
         },
         "flow_builder": "connect",
-        "flow_id": 92390,
+        "flow_id": 100930,
         "flow_name": "confirm_payment",
         "output_entities": {
           "parameters": {
@@ -273,12 +278,12 @@
         "output_entities_format": "table",
         "output_entities_text": "",
         "output_entities_view": "table",
-        "service_id": "60796",
-        "service_name": "domgonsa",
+        "service_id": "88757",
+        "service_name": "CiscoLiveMel2026",
         "type": "flow",
-        "webhook_url": "https://hooks.us.webexconnect.io/flows/92390/trigger/aiagent"
+        "webhook_url": "https://hooks.us.webexconnect.io/flows/100930/trigger/aiagent"
       },
-      "id": "7c790d690739079b508ecdbee61f324c",
+      "id": "352c894e0ea231ea44c1cc8f9f02c6f8",
       "input_entities": {
         "parameters": {
           "properties": {
@@ -297,15 +302,15 @@
             "RecordID": {
               "description": "The customer record to update. Use the {{RecordID}} value retrieved in the [fetch_balance] action",
               "examples": [
-                "CUST-001"
+                "recNyZKCvIBJLXsh0"
               ],
               "type": "string"
             }
           },
           "required": [
+            "Balance",
             "PaymentSessionId",
-            "RecordID",
-            "Balance"
+            "RecordID"
           ],
           "secure": [],
           "type": "object"
@@ -345,7 +350,7 @@
         "type": "flow",
         "webhook_url": "https://hooks.us.webexconnect.io/flows/92393/trigger/aiagent"
       },
-      "id": "5efdea3cc5401c5a0d932c178f4ed1af",
+      "id": "e928981ba9960f5997ba442b8313e9e4",
       "input_entities": {
         "parameters": {
           "properties": {
@@ -372,7 +377,7 @@
       "action_type": "transfer",
       "bot_id": 72720,
       "capability": "custom_transfer",
-      "description": "Action to transfer the call to a human specialist when a customer has concerns about a suspicious transaction",
+      "description": "Action to transfer the call to a human specialist when a customer has concerns about a suspicious transaction that has been fetched with [fetch_transactions]",
       "enabled": true,
       "exit_details": {
         "announce_transfer": true,
@@ -399,10 +404,17 @@
         "output_entities_text": "",
         "output_entities_view": "table"
       },
-      "id": "e89c1a25ba6ed1973f35afadb6599a33",
+      "id": "50ec252beb093cf4f3ec2ef605edf7ae",
       "input_entities": {
         "parameters": {
           "properties": {
+            "OutstandingDue": {
+              "description": "User's outstanding due balance. The value needs to include at least 2 decimals. If the value is 1000, we should use 1000.00",
+              "examples": [
+                "100.00"
+              ],
+              "type": "number"
+            },
             "dispute_transaction": {
               "description": "Amount of the transaction identified as suspicious. The value needs to include at least 2 decimals. If the value is 1000, we should use 1000.00",
               "examples": [
@@ -418,13 +430,6 @@
               ],
               "type": "string"
             },
-            "premium_due": {
-              "description": "User's premium balance. The value needs to include at least 2 decimals. If the value is 1000, we should use 1000.00",
-              "examples": [
-                "100.00"
-              ],
-              "type": "number"
-            },
             "susp_date": {
               "description": "Date of the transaction identified as suspicious",
               "examples": [],
@@ -438,8 +443,8 @@
             }
           },
           "required": [
-            "susp_vendor",
-            "ivr_verified"
+            "ivr_verified",
+            "susp_vendor"
           ],
           "secure": [],
           "type": "object"
@@ -481,7 +486,7 @@
         "output_entities_text": "",
         "output_entities_view": "table"
       },
-      "id": "c4fb2f8acf2d7620e74c15e57deaa4b5",
+      "id": "2ac33f2c0ea329680a67dcc091238b6d",
       "input_entities": {
         "parameters": {
           "properties": {
