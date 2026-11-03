@@ -21,14 +21,14 @@ Integrate the AI Agent with the Voice Flow.
 
 3. Choose the file that we downloaded in step 1 above.
 
-3. Name the new flow **<copy>AutonomousAI_Flow_2000_<w class="attendee"></w></copy>** and click on **Create Flow**.
+4. Name the new flow **<copy>AutonomousAI_Flow_2000_<w class="attendee"></w></copy>** and click on **Create Flow**.
    ![Profiles](../graphics/Lab1_AI_Agent/2.48.a1.png)
    ![Profiles](../graphics/Lab1_AI_Agent/2.48a.png)
 
-4. Make sure the **Edit** mode at the top is set to **ON**. Then, drag and drop the **Virtual Agent V2** and **Disconnect Contact** activities from the left panel onto the Design field.
+5. Make sure the **Edit** mode at the top is set to **ON**. You will now see that the flow is ready, drag and drop the **Virtual Agent V2** and **Disconnect Contact** activities from the left panel onto the Design field.
     ![Profiles](../graphics/Lab1_AI_Agent/2.49.a.gif)
 
-5. Connect the nodes and configure **VirtualAgentV2**:
+6. Connect the nodes and configure **VirtualAgentV2**:
 
     - Connect the **New Phone Contact** output node edge to this **VirtualAgentV2** node.
     - Connect the **Handled** outputs to **DisconnectContact**.
