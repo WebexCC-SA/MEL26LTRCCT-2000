@@ -49,6 +49,7 @@ You already have an email digital channel available in your tenant.
 9. In AI Agent Configuration, navigate to **Knowledge** and from the drop down, choose **WebexBankCLMel2026**
 
 10. **Created Knowledge Base is [Webex Bank](https://webexbank.appinzip.com/){:target="\_blank"}**
+   ![Profiles](../graphics/Lab1_AI_Agent/kb.png)
 
 11. Provide the following information in the **Add the essential details**, then click **Create**:
 
@@ -102,7 +103,7 @@ If a transaction is suspected by the customer, pull the recent transactions usin
 8. If the customer asks to speak to an agent, immediately escalate to a human agent through Agent handover action.</copy>_**
 
 
-12. Customize the Welcome message if you like
+12. Customize the Welcome message if you like.
 
 13. In the Conversation Tab, add additional Custom style prompts that you would like the AI Agent to follow.
 
