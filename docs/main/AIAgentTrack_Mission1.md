@@ -22,8 +22,8 @@ In order to be able to complete this lab, you need this:
 
 <span style="color: red;">[IMPORTANT - DO NOT DO THESE STEPS NOW. GO TO TASK 1 BELOW]</span>
 
-You already have your Airtable repositories completed for the Customer and Transactions data
-Use the Airtable Credentials provided to you.
+You already have read access to our [Airtable repositories](https://airtable.com/appyHCipREdqlqiDe/shrQkcmfHDvxvFyHp) completed for the Customer data
+If needed, use the Airtable Credentials provided to you.
 You already have an email digital channel available in your tenant.
 
 
