@@ -11,13 +11,15 @@ Your mission is to:
 
 Integrate the AI Agent with the Voice Flow.
 
-### Task 1. Build WxCC voice flow with AI Agent.
+### Task 1. You will <span style="color: red;">[IMPORTANT]</span> Download the flow [Pre_config_Voice_Flow](../graphics/Lab1_AI_Agent/voice_ai_agent_fee_collection_inbound.json){: download="voice_ai_agent_fee_collection_inbound.json"} and import the WxCC voice flow the hook up AI Agent we built already.
 
 1. Open [Control Hub](https://admin.webex.com){:target="_blank"} and go to **Contact Center** navigate to **Flows**, click on **Manage Flows** dropdown list and select **Create Flows**.
    ![Profiles](../graphics/Lab1_AI_Agent/2.47.gif)
 
-2. One the next page select **Start from scratch** and click on **Next**.
-   ![Profiles](../graphics/Lab1_AI_Agent/2.48.a.png)
+2. One the next page select **Import a flow** and click on **Next**.
+   ![Profiles](../graphics/Lab1_AI_Agent/2.48.a1.png)
+
+3. Choose the file that we downloaded in step 1 above.
 
 3. Name the new flow **<copy>AutonomousAI_Flow_2000_<w class="attendee"></w></copy>** and click on **Create Flow**.
    ![Profiles](../graphics/Lab1_AI_Agent/2.48.png)

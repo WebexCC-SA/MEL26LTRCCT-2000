@@ -34,7 +34,7 @@ You already have an email digital channel available in your tenant.
 
 2. <span style="color: red;">[IMPORTANT]</span> Download the file [Pre_config_AIAgent](../graphics/Lab1_AI_Agent/template_ai_agent_collection.json){: download="template_ai_agent_collection.json"}. The file might download to your browser’s configured download location. Move it to another folder if needed. If prompted, save it your computer's desktop or whereever you like it to be saved. We will need to use this in a bit.
 
-    > **ltrcct2000_outstanding_collection.json** - contains a prebuilt agent that we can import and step through, including the actions and what they mean.
+    > **template_ai_agent_collection.json** - contains a prebuilt agent that we can import and step through, including the actions and what they mean.
 
 3. Navigate to [Control Hub](https://admin.webex.com){:target="\_blank"} as you attendee admin **<copy>wxcclabs+admin_ID<w class="attendee"></w>@gmail.com</copy>** with the password provided to you.
 
