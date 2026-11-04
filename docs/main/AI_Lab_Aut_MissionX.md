@@ -23,7 +23,7 @@ Integrate the AI Agent with the Voice Flow.
 3. Choose the file that we downloaded in step 1 above.
 
 4. Name the new flow **<copy>AutonomousAI_Flow_2000_<w class="attendee"></w></copy>** and click on **Create Flow**.
-   ![Profiles](../graphics/Lab1_AI_Agent/2.48a.png)
+      ![Profiles](../graphics/Lab1_AI_Agent/2.48a.png)
 
 5. Make sure the **Edit** mode and **Enable Decryption** is set to **ON**. You will now see that the flow is ready, well mostly.
    ![Profiles](../graphics/Lab1_AI_Agent/edit_decrypt.png)
