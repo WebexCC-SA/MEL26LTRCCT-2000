@@ -74,7 +74,7 @@ More pre-configured entities will be mentioned during the lab missions if they h
 2. Login using your provided Admin username and password.
    ![Profiles](../graphics/Lab1_AI_Agent/18.3.gif)
 
-#### Login to Webex App.
+#### Login to Webex App - this is for making calls into Webex Contact Center.
 
 1. Open the **Webex App** on your PC.
    ![Profiles](../graphics/Lab1_AI_Agent/18.1.gif)
