@@ -26,7 +26,7 @@ icon: material/bullseye-arrow
 1. We will be using a shared lab tenant for simulations, meaning all attendees will work within the same Webex Contact Center environment. To avoid conflicts, ensure that any entities you configure are tagged with the Attendee ID assigned to you.
 2. The majority of the configuration in Control Hub is already set up, allowing you to focus primarily on configuration of **Webex AI Agent** and other AI features.
 3. Of course, there may still be some elements to adjust, but these should be minimal, letting you concentrate on building and refining the flow logic rather than spending time on flow setup.
-4. The Human Agent has been configured for you. You will be performing the rest of the configuration for the AI Agent and the integration with the channels. It is less likely you will focus on Agent Desktop because we are focusing on AI Agent capabilities.
+4. The Human Agent has been configured for you. You will be performing the rest of the configuration for the AI Agent and the integration with the channels. The Agent Desktop focus is towards the end because we are focusing on AI Agent capabilities - automating balance due, PIN based auth, offering partial and full payment options, making the payment while on call, validating that payment has been received, escalating a disputed transaction, checking the agent desktop when it comes through to a human etc.
 5. Please ask for help when you need it.
 
 ---
