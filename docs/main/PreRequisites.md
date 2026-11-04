@@ -71,15 +71,15 @@ More pre-configured entities will be mentioned during the lab missions if they h
 1. Open up Google Chrome Web browser and login to [Control Hub](https://admin.webex.com){:target="\_blank"}.
    ![Profiles](../graphics/Lab1_AI_Agent/GS1.png)
 
-2. Login using your provided Admin username and password.
+2. Login using your provided Admin username and password. You can find this in your email inbox above.
    ![Profiles](../graphics/Lab1_AI_Agent/18.3.gif)
 
-#### Login to Webex App - this is for making calls into Webex Contact Center.
+#### Login to Webex App - this is for making calls into Webex Contact Center ONLY.
 
 1. Open the **Webex App** on your PC.
    ![Profiles](../graphics/Lab1_AI_Agent/18.1.gif)
 
-2. **Sign in** using the Admin credentials - Admin: **<copy>wxcclabs+admin_ID<w class="attendee"></w>@gmail.com</copy>**. (The same credentials you used to login to the Contorl Hub).
+2. **Sign in** using the Admin credentials - Admin: **<copy>wxcclabs+admin_ID<w class="attendee"></w>@gmail.com</copy>**. (The same credentials you used to login to the Control Hub).
    ![Profiles](../graphics/Lab1_AI_Agent/18.3.gif)
 
 3. If you receive a prompt to add an Address, click **Cancel**.
