@@ -38,26 +38,35 @@ Integrate the AI Agent with the Voice Flow.
       ![Profiles](../graphics/Lab1_AI_Agent/airtable_customer_natid.png)
     - Next, Setting 2 variables - **phone_number_use** = {{ NewContact.ANI | slice(2)}} and **NationalId_Caller** = {{CollectDigits.DigitsEntered}} - we will be using the latter to datadip into Airtable to fetch **{{firstName}} and {{lastName}} and {{NationalId}}**
       ![Profiles](../graphics/Lab1_AI_Agent/collect_digit_var_set.png)
-    - Next, on the HTTP node, let's look at the Request URL - **https://api.airtable.com/v0/appyHCipREdqlqiDe/Customers?filterByFormula={NationalId}="{{NationalId_Caller}}"** - it uses the NationalId collected from the caller to look up the {{firstName}}, {{lastName}} and the {{NationalId}} from the single source of truth.
+    - Next, on the HTTP activity, let's look at the Request URL - **https://api.airtable.com/v0/appyHCipREdqlqiDe/Customers?filterByFormula={NationalId}="{{NationalId_Caller}}"** - it uses the NationalId collected from the caller to look up the {{firstName}}, {{lastName}} and the {{NationalId}} from the single source of truth.
     - We then play a message using Cisco TTS: **{{firstName}} {{lastName}}** - this is to tell us attendees the names for our records assigned to us so we know we are using the right records.
-    - The next node is the most important **VirtualAgentV2** node - this is where we bring in the **Webex AI Agent (Autonomous)** that we created before in Mission 1 and tested: **<w class="attendee"></w>_outstanding_collection**
-
+    - The next activity is the most important **VirtualAgentV2** node - this is where we bring in the **Webex AI Agent (Autonomous)** that we created before in Mission 1 and tested: **<w class="attendee"></w>_outstanding_collection**
     ![Profiles](../graphics/Lab1_AI_Agent/vva2_choice_eventdata.png)
+    - Note the Event Data inputs:
+      <copy>
+      {
+      "nationalid": "{{NationalId}}", 
+      "firstName":"{{firstName}}", 
+      "lastName":"{{lastName}}"
+      }
+      </copy>
+      These could be used inside the Agent for various reasons. Most importantly to trigger actions
 
-6. Drag and drop **Queue Contact** and **Play Music** nodes. Configure them as the following:
+6. **VirtualAgent** Handled Node can be sent to a **Play Message** activity that thanks the caller for using the AI Agent.
 
-    - **Queue Contact**
-    - Connect the **Escalated** path from the **Virtual Agent V2** activity to the **Queue Contact** activity.
-    - Connect the **Queue Contact** activity to the **Play Music** activity.
-    - Click on the **Queue Contact** node and select **Static Queue**.
-    - Queue name: **<copy><w class="attendee"></w>\_2000_Voice_Queue</copy>**
+7.  - **Escalated Path - Important**
+    - Connect the **Escalated** path from the **Virtual Agent V2** activity to the **Parse** activity so that we capture **$.escalation_trigger** into **transfer_type**
+      ![Profiles](../graphics/Lab1_AI_Agent/escalated_parse.png)
+    - Connect the **Parse** activity from previous step to the **Case** activity.
+    - We route based on 3 values of transfer_type: agent_transfer, dispute_transfer, investment_transfer
+      - Case 1: agent_transfer: we send the caller to the after a **Play Message** = 'Your call will be sent to a human expert.' followed by a  **Queue Contact**: **<copy><w class="attendee"></w>\_Queue</copy>**
     - **Play Music**
     - Create a loop by connecting the Play Music activity back to itself - to create a music loop, following the example provided below.
     - Click on the **Play Music** node and select Music File: **defaultmusic_on_hold_cisco_opus_no_1.wav**.
 
     ![Profiles](../graphics/Lab1_AI_Agent/2.50.gif)
 
-7. **Validate** and **Publish** Flow. In the popped up window, click on dropdown menu to select **Latest** label (**DO NOT** Select any other tag but only **Latest**), then click **Publish**.
+8. **Validate** and **Publish** Flow. In the popped up window, click on dropdown menu to select **Latest** label (**DO NOT** Select any other tag but only **Latest**), then click **Publish**.
    ![Profiles](../graphics/Lab1_AI_Agent/2.51.gif)
 
 8. Assign the Flow to your **Channel (Entry Point)**. Do this by first going to **Channels** and search for your channel **<copy><w class="attendee"></w>\_2000_Channel</copy>**.
