@@ -23,27 +23,27 @@ Your mission is to:
 
 ### (<span style="color: red;"><strong>Read Only</strong></span>) Task 1. Order Provisioning & Control Hub Settings.
 
-This task is read only. Read until Task 2. 
 
-1. You should have the AI Assistant SKU **A-FLEX-AI-ASST** from CCW provisioned in the tenant.
-
-2. Once you have provisioned it, admins with the appropriate profile and access controls will be able to see the AI Assistant menu in Control Hub. From there, the customer can enable/disable the **Virtual Agent Transfer Summary** feature from the Control Hub.
+1. Go to Control Hub and logon as Admin user **<copy>wxcclabs+admin_ID<w class="attendee"></w>@gmail.com</copy>**. From there, go to Contact Center > AI Features.
    ![Profiles](../graphics/Lab1_AI_Agent/3.1.png)
 
-3. The Agent needs to be logged in to the Team that is configured with Desktop Layout that has "ai-assistant" features configured
-   (**Note: Default desktop layout already incudes the AI Agent Assistance widget**). <br/>
-   <br/>Agents Team:
-   ![Profiles](../graphics/Lab1_AI_Agent/3.41.png)  
-    <br/>Desktop Layout:
-   ![Profiles](../graphics/Lab1_AI_Agent/3.43.png)
-   <br/><br/>Desktop Layout file: Make sure **ai-assistant** is configured under the **advancedHeader** in case you are using a custom Layout file.
-   ![Profiles](../graphics/Lab1_AI_Agent/3.5.png)
-   <br/>You can download a preconfigured desktop layout from here. <br/>
-   [Desktop Layout](https://drive.google.com/file/d/1EnM-2r9XOVm2EcE6ND4fL3L62qZesm5_/view?usp=sharing){:target="\_blank"}
+2. Go to the Queue Tab at the Top
+   - Search for your queue: **<copy><w class="attendee"></w>_Queue</copy>**
+   - Click on the Queue and Go to Generated Summaries and turn on Virtual agent Summaries and Wrapup Summaries.
+   - In this lab it is turned on for all queues.
 
-### Task 2. Test Agent Transfer Summary Feature
+### Task 2. Turn on Real-Time Assist Feature
 
-1. Login to the **Agent Desktop** with your Admin user.
+1. Scroll down to Real-time Assist
+2. Apply Real-time Assist
+3. Choose the Skill that has been created.
+4. Click on the link below it that says Manage Skills in AI Agent Studio
+5. Search for WebexBankMel2026
+6. Let's open it and review the setup
+
+### Task 3. Test the Feature
+
+1. Login to the **Agent Desktop** with your Agenti user.
    ![Profiles](../graphics/Lab1_AI_Agent/3.39.png)
 
 2. Select **Desktop** Handle calls using option and click on **Save & Continue**.
