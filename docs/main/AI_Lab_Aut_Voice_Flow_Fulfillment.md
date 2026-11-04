@@ -59,8 +59,7 @@ In this Mission you will be using the Voice flow to execute the API call to crea
       - Action 7: investment_transfer: when investment discussions start the call is handed off to a human expert
          ![Profiles](../graphics/Lab1_AI_Agent/invest_transfer.png)
 
-3. Click on create <b>New Action</b>. From the drop-down option, select **Fulfillment**.
-   ![Profiles](../graphics/Lab1_AI_Agent/2.18.png)
+3. If you make any updates to this agent, remember to Save Changes and Publish
 
 
-<p style="text-align:center"><strong>Congratulations, you have officially completed the Autonomous AI Agent lab! 🎉🎉 </strong></p>
+<p style="text-align:center"><strong>Congratulations, you have officially completed the Autonomous AI Agent Fulfillment lab! 🎉🎉 </strong></p>
