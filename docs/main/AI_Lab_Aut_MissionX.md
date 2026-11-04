@@ -57,7 +57,8 @@ Integrate the AI Agent with the Voice Flow.
 
 9. **Escalated Path - Important**
     - Connect the **Escalated** path from the **Virtual Agent V2** activity to the **Parse** activity so that we capture **$.escalation_trigger** into **transfer_type**
-         ![Profiles](../graphics/Lab1_AI_Agent/escalated_parse.png)
+            ![Profiles](../graphics/Lab1_AI_Agent/escalated_parse.png)
+
     - Connect the **Parse** activity from previous step to the **Case** activity.
     - We route based on 3 values of transfer_type: agent_transfer, dispute_transfer, investment_transfer
       - Case 1: agent_transfer:
