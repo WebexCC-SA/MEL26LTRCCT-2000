@@ -10,7 +10,7 @@ icon: material/bullseye-arrow
     <td><a href="https://admin.webex.com/" target="_blank">https://admin.webex.com/</a></td>
   </tr>
   <tr>
-    <td style="background-color: #d9edf7; font-weight: bold; color: black;">Agent Desktop</td>
+    <td style="background-color: #d9edf7; font-weight: bold; color: black;">Agent Desktop - using Edge</td>
     <td><a href="microsoft-edge:https://desktop.wxcc-us1.cisco.com">https://desktop.wxcc-us1.cisco.com</a></td>
   </tr>
    <tr>
