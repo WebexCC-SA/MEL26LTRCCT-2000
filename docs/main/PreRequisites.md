@@ -2,6 +2,22 @@
 #icon: material/folder-open-outline
 icon: material/bullseye-arrow
 ---
+## Quick Links
+
+<table>
+  <tr>
+    <td style="background-color: #d9edf7; font-weight: bold; color: black;">Control Hub</td>    
+    <td><a href="https://admin.webex.com/" target="_blank">https://admin.webex.com/</a></td>
+  </tr>
+  <tr>
+    <td style="background-color: #d9edf7; font-weight: bold; color: black;">Agent Desktop</td>
+    <td><a href="microsoft-edge:https://desktop.wxcc-us1.cisco.com">https://desktop.wxcc-us1.cisco.com</a></td>
+  </tr>
+   <tr>
+    <td style="background-color: #d9edf7; font-weight: bold; color: black;">Help Space</td>
+    <td><a href="https://admin.webex.com">LTRCCT-2000</a></td>
+  </tr>
+</table>
 
 ## Learning Objectives
 

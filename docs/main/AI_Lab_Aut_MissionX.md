@@ -18,16 +18,19 @@ Integrate the AI Agent with the Voice Flow.
    ![Profiles](../graphics/Lab1_AI_Agent/2.47.gif)
 
 2. One the next page select **Import a flow** and click on **Next**.
+
    ![Profiles](../graphics/Lab1_AI_Agent/2.48.a1.png)
 
 3. Choose the file that we downloaded in step 1 above.
 
 4. Name the new flow **<copy>AutonomousAI_Flow_2000_<w class="attendee"></w></copy>** and click on **Create Flow**.
-   ![Profiles](../graphics/Lab1_AI_Agent/2.48.a1.png)
+
    ![Profiles](../graphics/Lab1_AI_Agent/2.48a.png)
 
-5. Make sure the **Edit** mode at the top is set to **ON**. You will now see that the flow is ready, drag and drop the **Virtual Agent V2** and **Disconnect Contact** activities from the left panel onto the Design field.
-    ![Profiles](../graphics/Lab1_AI_Agent/2.49.a.gif)
+5. Make sure the **Edit** mode and **Enable Decryption** is set to **ON**. You will now see that the flow is ready, well mostly.
+
+    ![Profiles](../graphics/Lab1_AI_Agent/edit_decrypt.png)
+   We will now step through the different blocks and see what they mean and what they are doing.
 
 6. Connect the nodes and configure **VirtualAgentV2**:
 
