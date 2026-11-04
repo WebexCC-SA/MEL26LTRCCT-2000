@@ -85,8 +85,10 @@ Integrate the AI Agent with the Voice Flow.
                - CustomerID     = $.actions.fetch_balance[0].output.CustomerID
             - because those fields originate in fetch_balance’s output. Investments is the linked Airtable record ID you’re passing as the investment ID.
 
-10. **Validate** and **Publish** Flow. In the popped up window, click on dropdown menu to select **Latest** label (**DO NOT** Select any other tag but only **Latest**), then click **Publish**.
-      ![Profiles](../graphics/Lab1_AI_Agent/2.51.gif)
+10. After the Parse activity for Cases 2 and 3, we **Play Message** just to notify the caller what is happening before dropping into the queue.
+
+11. **Validate** and **Publish** Flow. In the popped up window, click on dropdown menu to select **Latest** label (**DO NOT** Select any other tag but only **Latest**), then click **Publish**.
+      ![Profiles](../graphics/Lab1_AI_Agent/publish_flow.png)
 
 11. Assign the Flow to your **Channel (Entry Point)**.
 12. Do this by first going to **Channels** and search for your channel **<copy><w class="attendee"></w>\_2000_Channel</copy>**.
