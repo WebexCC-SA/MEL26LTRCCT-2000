@@ -14,7 +14,7 @@ icon: material/bullseye-arrow
     <td><a href="microsoft-edge:https://desktop.wxcc-us1.cisco.com">https://desktop.wxcc-us1.cisco.com</a></td>
   </tr>
    <tr>
-    <td style="background-color: #d9edf7; font-weight: bold; color: black;">Help Space</td>
+    <td style="background-color: #d9edf7; font-weight: bold; color: black;">Help Space - COMING SOON</td>
     <td><a href="https://admin.webex.com">LTRCCT-2000</a></td>
   </tr>
 </table>
