@@ -27,9 +27,10 @@ Integrate the AI Agent with the Voice Flow.
 
 5. Make sure the **Edit** mode and **Enable Decryption** is set to **ON**. You will now see that the flow is ready, well mostly.
    ![Profiles](../graphics/Lab1_AI_Agent/edit_decrypt.png)
-   We will now step through the different blocks and see what they mean and what they are doing.
 
-6. Let's get into the **FLOW**:
+6. We will now step through the different blocks and see what they mean and what they are doing.
+
+7. Let's get into the **FLOW**:
     - The Caller hits the **CollectDigits** node
     - Collect the **NationalId** from the caller at this node - a 5 digit number that you can see in the [Airtable repo](https://airtable.com/appyHCipREdqlqiDe/shrQkcmfHDvxvFyHp){:target="_blank"}.
       ![Profiles](../graphics/Lab1_AI_Agent/airtable_customer_natid.png)
@@ -52,9 +53,9 @@ Integrate the AI Agent with the Voice Flow.
       </copy>
       These could be used inside the Agent for various reasons. Most importantly to trigger actions
 
-7. **VirtualAgent** Handled Node can be sent to a **Play Message** activity that thanks the caller for using the AI Agent.
+8. **VirtualAgent** Handled Node can be sent to a **Play Message** activity that thanks the caller for using the AI Agent.
 
-8. **Escalated Path - Important**
+9. **Escalated Path - Important**
     - Connect the **Escalated** path from the **Virtual Agent V2** activity to the **Parse** activity so that we capture **$.escalation_trigger** into **transfer_type**
          ![Profiles](../graphics/Lab1_AI_Agent/escalated_parse.png)
     - Connect the **Parse** activity from previous step to the **Case** activity.
@@ -77,11 +78,12 @@ Integrate the AI Agent with the Voice Flow.
                ![Profiles](../graphics/Lab1_AI_Agent/dispute_parse.png)
 
 
-9. **Validate** and **Publish** Flow. In the popped up window, click on dropdown menu to select **Latest** label (**DO NOT** Select any other tag but only **Latest**), then click **Publish**.
-   ![Profiles](../graphics/Lab1_AI_Agent/2.51.gif)
+10. **Validate** and **Publish** Flow. In the popped up window, click on dropdown menu to select **Latest** label (**DO NOT** Select any other tag but only **Latest**), then click **Publish**.
+      ![Profiles](../graphics/Lab1_AI_Agent/2.51.gif)
 
-10. Assign the Flow to your **Channel (Entry Point)**. Do this by first going to **Channels** and search for your channel **<copy><w class="attendee"></w>\_2000_Channel</copy>**.
-   ![Profiles](../graphics/Lab1_AI_Agent/2.52.png)
+11. Assign the Flow to your **Channel (Entry Point)**.
+12. Do this by first going to **Channels** and search for your channel **<copy><w class="attendee"></w>\_2000_Channel</copy>**.
+      ![Profiles](../graphics/Lab1_AI_Agent/2.52.png)
 
 
 11. Click on **<copy><w class="attendee"></w>\_2000_Channel</copy>**. In the **Channel** settings section, change the following and then **Save** the changes.<br/>
