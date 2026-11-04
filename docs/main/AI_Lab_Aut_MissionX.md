@@ -40,10 +40,9 @@ Integrate the AI Agent with the Voice Flow.
       ![Profiles](../graphics/Lab1_AI_Agent/collect_digit_var_set.png)
     - Next, on the HTTP node, let's look at the Request URL - **https://api.airtable.com/v0/appyHCipREdqlqiDe/Customers?filterByFormula={NationalId}="{{NationalId_Caller}}"** - it uses the NationalId collected from the caller to look up the {{firstName}}, {{lastName}} and the {{NationalId}} from the single source of truth.
     - We then play a message using Cisco TTS: **{{firstName}} {{lastName}}** - this is to tell us attendees the names for our records assigned to us so we know we are using the right records.
-    - The next node is the most important **VirtualAgentV2** node - this is where we bring in the **Webex AI Agent (Autonomous)** that we created before in Mission 1 and tested.
-    - Virtual Agent: **<copy><w class="attendee"></w>\_2000_AutoAI_Lab</copy>**
+    - The next node is the most important **VirtualAgentV2** node - this is where we bring in the **Webex AI Agent (Autonomous)** that we created before in Mission 1 and tested: **<w class="attendee"></w>_outstanding_collection**
 
-    ![Profiles](../graphics/Lab1_AI_Agent/2.49.gif)
+    ![Profiles](../graphics/Lab1_AI_Agent/vva2_choice_eventdata.png)
 
 6. Drag and drop **Queue Contact** and **Play Music** nodes. Configure them as the following:
 
