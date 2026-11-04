@@ -23,12 +23,10 @@ Integrate the AI Agent with the Voice Flow.
 3. Choose the file that we downloaded in step 1 above.
 
 4. Name the new flow **<copy>AutonomousAI_Flow_2000_<w class="attendee"></w></copy>** and click on **Create Flow**.
-
    ![Profiles](../graphics/Lab1_AI_Agent/2.48a.png)
 
 5. Make sure the **Edit** mode and **Enable Decryption** is set to **ON**. You will now see that the flow is ready, well mostly.
-
-    ![Profiles](../graphics/Lab1_AI_Agent/edit_decrypt.png)
+   ![Profiles](../graphics/Lab1_AI_Agent/edit_decrypt.png)
    We will now step through the different blocks and see what they mean and what they are doing.
 
 6. Let's get into the **FLOW**:
@@ -40,7 +38,9 @@ Integrate the AI Agent with the Voice Flow.
     - Next, on the HTTP activity, let's look at the Request URL - **https://api.airtable.com/v0/appyHCipREdqlqiDe/Customers?filterByFormula={NationalId}="{{NationalId_Caller}}"** - it uses the NationalId collected from the caller to look up the {{firstName}}, {{lastName}} and the {{NationalId}} from the single source of truth.
     - In the same activity, we need to set the Bearer token right after the word 'Bearer' and a space. Copy this from your email box that has the credentials.
     - We then play a message using Cisco TTS: **{{firstName}} {{lastName}}** - this is to tell us attendees the names for our records assigned to us so we know we are using the right records.
-    - The next activity is the most important **VirtualAgentV2** node - this is where we bring in the **Webex AI Agent (Autonomous)** that we created before in Mission 1 and tested: **<w class="attendee"></w>_outstanding_collection** <br>
+    - The next activity is the most important **VirtualAgentV2** node
+    - This is where we bring in the **Webex AI Agent (Autonomous)**
+    - We created before in Mission 1 and tested: **<w class="attendee"></w>_outstanding_collection** <br>
        ![Profiles](../graphics/Lab1_AI_Agent/vva2_choice_eventdata.png)
     - Note the Event Data inputs:
       <copy>
@@ -56,7 +56,7 @@ Integrate the AI Agent with the Voice Flow.
 
 8. **Escalated Path - Important**
     - Connect the **Escalated** path from the **Virtual Agent V2** activity to the **Parse** activity so that we capture **$.escalation_trigger** into **transfer_type**
-      ![Profiles](../graphics/Lab1_AI_Agent/escalated_parse.png)
+         ![Profiles](../graphics/Lab1_AI_Agent/escalated_parse.png)
     - Connect the **Parse** activity from previous step to the **Case** activity.
     - We route based on 3 values of transfer_type: agent_transfer, dispute_transfer, investment_transfer
       - Case 1: agent_transfer:
