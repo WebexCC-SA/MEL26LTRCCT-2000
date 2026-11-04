@@ -15,7 +15,7 @@ icon: material/bullseye-arrow
   </tr>
    <tr>
     <td style="background-color: #d9edf7; font-weight: bold; color: black;">Help Space - COMING SOON</td>
-    <td><a href="https://admin.webex.com">LTRCCT-2000</a></td>
+    <td><a href="https://admin.webex.com" target="_blank">LTRCCT-2000</a></td>
   </tr>
 </table>
 
