@@ -32,12 +32,15 @@ Integrate the AI Agent with the Voice Flow.
     ![Profiles](../graphics/Lab1_AI_Agent/edit_decrypt.png)
    We will now step through the different blocks and see what they mean and what they are doing.
 
-6. Connect the nodes and configure **VirtualAgentV2**:
-
-    - Connect the **New Phone Contact** output node edge to this **VirtualAgentV2** node.
-    - Connect the **Handled** outputs to **DisconnectContact**.
-    - Click on the **VirtualAgentV2** block and select **Static Contact Center AI Config**.
-    - Select Contact Center AI Config as **Webex AI Agent (Autonomous)**.
+6. Let's get into the **FLOW**:
+    - The Caller hits the **CollectDigits** node
+    - Collect the **NationalId** from the caller at this node - a 5 digit number that you can see in the [Airtable repo](https://airtable.com/appyHCipREdqlqiDe/shrQkcmfHDvxvFyHp){:target="_blank"}.
+      ![Profiles](../graphics/Lab1_AI_Agent/airtable_customer_natid.png)
+    - Next, Setting 2 variables - **phone_number_use** = {{ NewContact.ANI | slice(2)}} and **NationalId_Caller** = {{CollectDigits.DigitsEntered}} - we will be using the latter to datadip into Airtable to fetch **{{firstName}} and {{lastName}} and {{NationalId}}**
+      ![Profiles](../graphics/Lab1_AI_Agent/collect_digit_var_set.png)
+    - Next, on the HTTP node, let's look at the Request URL - **https://api.airtable.com/v0/appyHCipREdqlqiDe/Customers?filterByFormula={NationalId}="{{NationalId_Caller}}"** - it uses the NationalId collected from the caller to look up the {{firstName}}, {{lastName}} and the {{NationalId}} from the single source of truth.
+    - We then play a message using Cisco TTS: **{{firstName}} {{lastName}}** - this is to tell us attendees the names for our records assigned to us so we know we are using the right records.
+    - The next node is the most important **VirtualAgentV2** node - this is where we bring in the **Webex AI Agent (Autonomous)** that we created before in Mission 1 and tested.
     - Virtual Agent: **<copy><w class="attendee"></w>\_2000_AutoAI_Lab</copy>**
 
     ![Profiles](../graphics/Lab1_AI_Agent/2.49.gif)
