@@ -59,12 +59,23 @@ Integrate the AI Agent with the Voice Flow.
       ![Profiles](../graphics/Lab1_AI_Agent/escalated_parse.png)
     - Connect the **Parse** activity from previous step to the **Case** activity.
     - We route based on 3 values of transfer_type: agent_transfer, dispute_transfer, investment_transfer
-      - Case 1: agent_transfer: we send the caller to the after a **Play Message** = 'Your call will be sent to a human expert.' followed by a  **Queue Contact**: **<copy><w class="attendee"></w>\_Queue</copy>**
-    - **Play Music**
-    - Create a loop by connecting the Play Music activity back to itself - to create a music loop, following the example provided below.
-    - Click on the **Play Music** node and select Music File: **defaultmusic_on_hold_cisco_opus_no_1.wav**.
+      - Case 1: agent_transfer:
+         - we send the caller to the after a **Play Message** = 'Your call will be sent to a human expert.' followed by a  **Queue Contact**: **<copy><w class="attendee"></w>\_Queue</copy>**
+         - **Play Music**
+         - Create a loop by connecting the Play Music activity back to itself - to create a music loop, following the example provided below.
+         - Click on the **Play Music** node and select Music File: **defaultmusic_on_hold_cisco_opus_no_1.wav**.
+            ![Profiles](../graphics/Lab1_AI_Agent/playmusic.png)
+      - Case 2: dispute_transfer:
+         - Using a Parse activity, we extract the reasons for the dispute as detected by the virutal agent - from the metadata
+            - where:
+            ivr_verified = $.actions.dispute_transfer[0].input.ivr_verified (It’s an entity on the dispute_transfer action, so it appears among that action’s inputs.)
+            OutstandingDue = $.actions.fetch_balance[0].output.OutstandingDue (It comes back from the Connect fetch_balance action, so it’s in that action’s output.)
+            dispute_transaction = $.actions.dispute_transfer[0].input.dispute_transaction (The agent passes the identified transaction amount into the dispute transfer action.)
 
-    ![Profiles](../graphics/Lab1_AI_Agent/2.50.gif)
+            - The distinction is input versus output: action parameters are under input; values returned by Connect are under output. The names and capitalization must match the metadata exactly.
+
+               ![Profiles](../graphics/Lab1_AI_Agent/dispute_parse.png)
+
 
 8. **Validate** and **Publish** Flow. In the popped up window, click on dropdown menu to select **Latest** label (**DO NOT** Select any other tag but only **Latest**), then click **Publish**.
    ![Profiles](../graphics/Lab1_AI_Agent/2.51.gif)
