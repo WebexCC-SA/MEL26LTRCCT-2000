@@ -119,7 +119,7 @@ nav:
               - "Mission 3: Configure Fulfillment Using Voice Flow": ./main/AI_Lab_Aut_Voice_Flow_Fulfillment.md
               - 'Mission 4: (<span style="color: red;"><strong>Read Only</strong></span>) Configure Fulfillment Using Webex Connect Flow': ./main/AI_Lab_Aut_Mission2.md
               - "Mission 5: Configure Transfer Action for a Specific Queue": ./main/AI_Lab_Aut_Mission_Transfer.md             
-              - "Mission 6: Configure Transfer Action for Webex AI Agent": ./main/AI_Lab_Aut_Mission_Transfer2.md
+        #      - "Mission 6: Configure Transfer Action for Webex AI Agent": ./main/AI_Lab_Aut_Mission_Transfer2.md
         #      - "Mission 7: Configure Action with MCP": ./main/AI_Lab_Aut_Mission_MCP.md
         #      - 'Mission 8: (<span style="color: red;"><strong>Optional</strong></span>) Configure Action with A2A': ./main/AI_Lab_Aut_Mission_A2A.md
         #      - 'Mission 8: (<span style="color: red;"><strong>Optional</strong></span>) Customize AI Agent Language': ./main/AI_Lab_Aut_Mission.Language.md
