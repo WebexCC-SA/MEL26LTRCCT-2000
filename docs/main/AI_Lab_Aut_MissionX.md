@@ -77,7 +77,13 @@ Integrate the AI Agent with the Voice Flow.
             - The distinction is input versus output: action parameters are under input; values returned by Connect are under output. The names and capitalization must match the metadata exactly.
 
                ![Profiles](../graphics/Lab1_AI_Agent/dispute_parse.png)
-
+      - Case 3: investment_transfer:
+         - Using a Parse activity, we extract the reasons for the investment based transfer as detected by the virutal agent - from the metadata
+            - where:
+               - investment_id  = $.actions.fetch_balance[0].output.Investments
+               - customer_email = $.actions.fetch_balance[0].output.Email
+               - CustomerID     = $.actions.fetch_balance[0].output.CustomerID
+            - because those fields originate in fetch_balance’s output. Investments is the linked Airtable record ID you’re passing as the investment ID.
 
 10. **Validate** and **Publish** Flow. In the popped up window, click on dropdown menu to select **Latest** label (**DO NOT** Select any other tag but only **Latest**), then click **Publish**.
       ![Profiles](../graphics/Lab1_AI_Agent/2.51.gif)
