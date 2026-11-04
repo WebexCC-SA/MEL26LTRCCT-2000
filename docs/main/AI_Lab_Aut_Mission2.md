@@ -25,9 +25,9 @@ Configure Fulfillment action to collect details from the customer and send them 
 
 ---
 
-## Build
+## (<span style="color: red;"><strong>Read Only - DO NOT EDIT - COMMON FLOWS FOR ALL</strong></span>)
 
-### Task 1. Create Service and AI Agent Flow in Webex Connect
+### Create Service and AI Agent Flow in Webex Connect
 
 1. From **Control Hub**, go to **Contact Center** > **Overview** and open up the **Webex Connect** Portal.
    ![Profiles](../graphics/Lab1_AI_Agent/open_connect.png)
