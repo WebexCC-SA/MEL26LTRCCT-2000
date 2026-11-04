@@ -57,21 +57,23 @@ You already have outgoing email configs/integrations setup in the tenant (Webex 
     >
     > System ID is created automatically
     >
-    > AI engine: **Webex AI Pro 1.0** - you could try the US Pro 2.0 engine as well which is more natural sounding
+    > Under Profile choose AI engine: **Webex AI Pro 1.0** - you could try the US Pro 2.0 engine as well which is more natural sounding
     >
     > **Agent's Profile** - Welcome Message: <copy>**_Hello, you’re speaking with Alex, the AI assistant for Webex Financial Group. I can help with payments, your outstanding balance and due date, recent transactions, and general banking enquiries. May I confirm your name?_**</copy>
     
-    > **Agent's Instructions** [Download](../graphics/Lab1_AI_Agent/Alex_Instructions.docx)
+    > **Agent's Instructions** [Download](../graphics/Lab1_AI_Agent/Alex_Instructions.docx). However this is already set for you.
+    > Go to the Instructions tab. Have a read.
     
 
-12. Customize the Welcome message if you like. Focus on the Instructions having a logical flow
+12. Customize the Welcome message if you like. Focus on the Instructions having a logical flow:
+    - Action triggers like [fetch_balance], [auth_user] etc tell the AI Agent the tools to invoke to complete the fulfillment.
 
-13. In the Conversation Tab, add additional Custom style prompts that you would like the AI Agent to follow.
+13. In the Conversation Tab, add additional Custom style prompts that you would like the AI Agent to follow and also local vocabulary, business abbreviations and what they mean etc.
 
 14. <span style="color: red;">[Read Only]</span> Here you can find the best practices on how to write the  Instructions: [Prompt engineering tips when writing instructions](https://help.webex.com/en-us/article/nelkmxk/Guidelines-and-best-practices-for-automating-with-AI-agent#concept-template_96114022-037a-46be-80ce-bf8c6b0d67c0){:target="_blank"}
 
 15. **Publish** the AI Agent. Provide any version name in popped up window (e.g. "V1").<br>
-    ![Profiles](../graphics/Lab1_AI_Agent/2.6.gif)
+    ![Profiles](../graphics/Lab1_AI_Agent/ai_agent_publish.png)
 
 ### Task 2. Test your AI Agent
 
