@@ -20,11 +20,11 @@ Your mission is to:
 
 In order to be able to complete this lab, you need this:
 
-<span style="color: red;">[IMPORTANT - DO NOT DO THESE STEPS NOW. GO TO TASK 1 BELOW]</span>
+<span style="color: red;">[IMPORTANT]</span>
 
 You already have read access to our [Airtable repositories](https://airtable.com/appyHCipREdqlqiDe/shrQkcmfHDvxvFyHp) completed for the Customer data
-If needed, use the Airtable Credentials provided to you.
-You already have an email digital channel available in your tenant.
+<span style="color: red;">[Not Required - Just in case]</span>If needed, use the Airtable Credentials provided to you.
+You already have outgoing email configs/integrations setup in the tenant (Webex Connect).
 
 
 
