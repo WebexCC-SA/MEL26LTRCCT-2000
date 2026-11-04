@@ -39,6 +39,7 @@ Integrate the AI Agent with the Voice Flow.
     - Next, Setting 2 variables - **phone_number_use** = {{ NewContact.ANI | slice(2)}} and **NationalId_Caller** = {{CollectDigits.DigitsEntered}} - we will be using the latter to datadip into Airtable to fetch **{{firstName}} and {{lastName}} and {{NationalId}}**
       ![Profiles](../graphics/Lab1_AI_Agent/collect_digit_var_set.png)
     - Next, on the HTTP activity, let's look at the Request URL - **https://api.airtable.com/v0/appyHCipREdqlqiDe/Customers?filterByFormula={NationalId}="{{NationalId_Caller}}"** - it uses the NationalId collected from the caller to look up the {{firstName}}, {{lastName}} and the {{NationalId}} from the single source of truth.
+    - In the same activity, we need to set the Bearer token right after the word 'Bearer' and a space. Copy this from your email box that has the credentials.
     - We then play a message using Cisco TTS: **{{firstName}} {{lastName}}** - this is to tell us attendees the names for our records assigned to us so we know we are using the right records.
     - The next activity is the most important **VirtualAgentV2** node - this is where we bring in the **Webex AI Agent (Autonomous)** that we created before in Mission 1 and tested: **<w class="attendee"></w>_outstanding_collection** <br>
        ![Profiles](../graphics/Lab1_AI_Agent/vva2_choice_eventdata.png)
@@ -52,9 +53,9 @@ Integrate the AI Agent with the Voice Flow.
       </copy>
       These could be used inside the Agent for various reasons. Most importantly to trigger actions
 
-6. **VirtualAgent** Handled Node can be sent to a **Play Message** activity that thanks the caller for using the AI Agent.
+7. **VirtualAgent** Handled Node can be sent to a **Play Message** activity that thanks the caller for using the AI Agent.
 
-7.  - **Escalated Path - Important**
+8. **Escalated Path - Important**
     - Connect the **Escalated** path from the **Virtual Agent V2** activity to the **Parse** activity so that we capture **$.escalation_trigger** into **transfer_type**
       ![Profiles](../graphics/Lab1_AI_Agent/escalated_parse.png)
     - Connect the **Parse** activity from previous step to the **Case** activity.
@@ -77,14 +78,14 @@ Integrate the AI Agent with the Voice Flow.
                ![Profiles](../graphics/Lab1_AI_Agent/dispute_parse.png)
 
 
-8. **Validate** and **Publish** Flow. In the popped up window, click on dropdown menu to select **Latest** label (**DO NOT** Select any other tag but only **Latest**), then click **Publish**.
+9. **Validate** and **Publish** Flow. In the popped up window, click on dropdown menu to select **Latest** label (**DO NOT** Select any other tag but only **Latest**), then click **Publish**.
    ![Profiles](../graphics/Lab1_AI_Agent/2.51.gif)
 
-8. Assign the Flow to your **Channel (Entry Point)**. Do this by first going to **Channels** and search for your channel **<copy><w class="attendee"></w>\_2000_Channel</copy>**.
+10. Assign the Flow to your **Channel (Entry Point)**. Do this by first going to **Channels** and search for your channel **<copy><w class="attendee"></w>\_2000_Channel</copy>**.
    ![Profiles](../graphics/Lab1_AI_Agent/2.52.png)
 
 
-9. Click on **<copy><w class="attendee"></w>\_2000_Channel</copy>**. In the **Channel** settings section, change the following and then **Save** the changes.<br/>
+11. Click on **<copy><w class="attendee"></w>\_2000_Channel</copy>**. In the **Channel** settings section, change the following and then **Save** the changes.<br/>
     Routing Flow: **<copy>AutonomousAI_Flow_2000_<w class="attendee"></w></copy>**<br/>
     Version Label: **Latest**<br/>
     ![Profiles](../graphics/Lab1_AI_Agent/2.53.gif)
