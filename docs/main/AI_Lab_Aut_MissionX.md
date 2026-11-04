@@ -18,7 +18,6 @@ Integrate the AI Agent with the Voice Flow.
    ![Profiles](../graphics/Lab1_AI_Agent/2.47.gif)
 
 2. One the next page select **Import a flow** and click on **Next**.
-
    ![Profiles](../graphics/Lab1_AI_Agent/2.48.a1.png)
 
 3. Choose the file that we downloaded in step 1 above.
