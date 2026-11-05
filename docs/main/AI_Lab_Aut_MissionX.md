@@ -109,7 +109,7 @@ Integrate the AI Agent with the Voice Flow.
     Routing Flow: **<copy>AutonomousAI_Flow_2000_<w class="attendee"></w></copy>**<br/>
     Version Label: **Latest**<br/>
     ![Profiles](../graphics/Lab1_AI_Agent/2.53.gif)
-15. Dial the support number assigned to your **<w class="attendee"></w>\_Channel** to test the Autonomous AI Agent over a voice call.
+15. Dial the support number assigned to your **<w class="attendee"></w>_Channel** to test the Autonomous AI Agent over a voice call.
    ![Profiles](../graphics/Lab1_AI_Agent/2.84.png)
    - Example Script:
       - When asked by IVR, put in your NationalId using the keypad
@@ -131,6 +131,7 @@ Integrate the AI Agent with the Voice Flow.
       - Pay
       - Let the agent know you have paid
       - Agent will check if you have
+      - You can refresh the [Airtable](https://airtable.com/appyHCipREdqlqiDe/shrQkcmfHDvxvFyHp) and see if the OutstandingDue has been updated with the correct balance
       - You could then ask about investments or ask for last transaction and then want to dispute it
       - Agent will transfer you to a human
 
