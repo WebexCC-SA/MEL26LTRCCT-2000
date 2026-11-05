@@ -25,12 +25,13 @@ Your mission is to:
 
 
 1. Go to Control Hub and logon as Admin user **<copy>wxcclabs+admin_ID<w class="attendee"></w>@gmail.com</copy>**. From there, go to Contact Center > AI Features.
-   ![Profiles](../graphics/Lab1_AI_Agent/3.1.png)
+   ![Profiles](../graphics/Lab1_AI_Agent/ch_ai_features_on.png)
 
 2. Go to the Queue Tab at the Top
    - Search for your queue: **<copy><w class="attendee"></w>_Queue</copy>**
    - Click on the Queue and Go to Generated Summaries and turn on Virtual agent Summaries and Wrapup Summaries.
    - In this lab it is turned on for all queues.
+   ![Profiles](../graphics/Lab1_AI_Agent/ch_ai_realtime_summ_q_on.png) <br>
 
 ### Task 2. Turn on Real-Time Assist Feature
 
@@ -40,6 +41,13 @@ Your mission is to:
 4. Click on the link below it that says Manage Skills in AI Agent Studio
 5. Search for WebexBankMel2026
 6. Let's open it and review the setup
+
+   ![Profiles](../graphics/Lab1_AI_Agent/ch_ai_realtime_summ_q_on.png) <br>
+7. Under Profile, we can instruct the Assistant on the kind of focused help the human would need
+8. The knowledge tab has the knowledge base already selected for us.
+9. The knowledge base was created using [Fraud_KB](../graphics/download/Fraud_KB.docx){: download="Fraud_KB.docx"}
+10. The Actions tab helps the human agent to fetch transactions if the AI agent was asked by the customer to escalate immediately <br>
+   ![Profiles](../graphics/Lab1_AI_Agent/ai_assist_action.png) <br>
 
 ### Task 3. Test the Feature
 
