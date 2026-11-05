@@ -122,7 +122,7 @@ Integrate the AI Agent with the Voice Flow.
       - Authenticates and offers you your outstanding due
       - Offers you full or partial payment
       - You pick what you like
-      - It send you email on the email address you have acces to for this lab
+      - It send you an email with the payment link from Novapay on the email address you have acces to for this lab
       - You ask the agent to wait while you put in the payment
       - You can use dummy card 4242 4242 4242 4242
       - Exp 01/29
