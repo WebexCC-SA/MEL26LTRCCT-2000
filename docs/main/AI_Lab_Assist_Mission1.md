@@ -74,4 +74,7 @@ Your mission is to:
 8. As a human agent, you can Get Assistance on the call on how to handle disputes.
    ![Profiles](../graphics/Lab1_AI_Agent/ai_agent_transfer_summary_get_assist.png)
 
+9. The Assitant instructs the human agent to collect the customer ID, so the transaction can be revalidated.
+    ![Profiles](../graphics/Lab1_AI_Agent/ai_assist_rtime_action_summary.png)
+
 <p style="text-align:center"><strong>Congratulations, you have officially completed this mission! 🎉🎉 </strong></p>
