@@ -28,7 +28,7 @@ You already have outgoing email configs/integrations setup in the tenant (Webex 
 
 
 
-### Task 1. Create Alex, your Debt Collection AI Agent
+### Task 1. Create Alex, your Banking AI Agent
 
 1. In this first step, you will define the "brain" and personality of your AI Agent. You will configure the core identity of Alex, setting the professional and secure tone required for financial interactions. This section covers the implementation of the System Prompt, where you will establish the strict sequential logic—from name verification to debt disclosure—ensuring the agent acts as a secure first-line filter for Webex Financial Group.
 
