@@ -5,6 +5,10 @@ icon: material/bullseye-arrow
 ## Quick Links
 
 <table>
+   <tr>
+    <td style="background-color: #d9edf7; font-weight: bold; color: black;">Email Box</td>    
+    <td><a href="https://webmail.appinzip.com/" target="_blank">https://webmail.appinzip.com/</a></td>
+  </tr>
   <tr>
     <td style="background-color: #d9edf7; font-weight: bold; color: black;">Control Hub</td>    
     <td><a href="https://admin.webex.com/" target="_blank">https://admin.webex.com/</a></td>
@@ -31,7 +35,11 @@ icon: material/bullseye-arrow
 
 ---
 
-### Predefined configuration
+### Predefined configuration - Found in your dedicated mailbox
+
+> > [Check your email](https://webmail.appinzip.com){:target="\_blank"}
+Put in your email address: **<copy>wxcclabsadmin_ID<w class="attendee"></w>@appinzip.com</copy>**
+Use the Password that has been provided to you.
 
 > Entry Point/Channel: **<copy><w class="attendee"></w>\_Channel</copy>**
 
@@ -60,7 +68,7 @@ Use the Password that has been provided to you.
 
 > You can find an email from domgonsa@cisco.com that has all the other details like: Entry Point, EP-DN etc.
 
-More pre-configured entities will be mentioned during the lab missions if they have any.
+More pre-configured entities will be in your mailbox or mentioned during the lab missions if they have any.
 
 ---
 

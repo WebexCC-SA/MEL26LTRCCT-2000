@@ -84,8 +84,8 @@ Integrate the AI Agent with the Voice Flow.
 
             - The distinction is input versus output: action parameters are under input; values returned by Connect are under output. The names and capitalization must match the metadata exactly.
 
-               ![Profiles](../graphics/Lab1_AI_Agent/dispute_parse.png)
-      - Case 3: investment_transfer:
+               ![Profiles](../graphics/Lab1_AI_Agent/dispute_parse.png) <br>
+      - Case 3: investment_transfer:<br>
          - Using a Parse activity, we extract the reasons for the investment based transfer as detected by the virutal agent - from the metadata
             - where:
                - investment_id  = $.actions.fetch_balance[0].output.Investments
