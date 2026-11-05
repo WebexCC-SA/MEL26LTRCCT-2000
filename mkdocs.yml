@@ -115,7 +115,7 @@ nav:
               - "Lab overview": ./main/AI_Lab_Overview.md
               - "Mission 1: Create AI Autonomous Agent": ./main/AIAgentTrack_Mission1.md
               - 'Mission 2: (<span style="color: red;"><strong>Read Only</strong></span>) Configure Fulfillment Using Webex Connect Flow': ./main/AI_Lab_Aut_Mission2.md
-              - "Mission 3: Configure Fulfillment Using Voice Flow": ./main/AI_Lab_Aut_Voice_Flow_Fulfillment.md
+              - "Mission 3: Configure Fulfillment in AI Agent": ./main/AI_Lab_Aut_Voice_Flow_Fulfillment.md
               - "Mission 4: Integrating the AI Agent with Flow for Voice Calls": ./main/AI_Lab_Aut_MissionX.md
         #      - "Mission 3: Send Custom data to Autonomous AI Agent": ./main/AI_Lab_Aut_CustomData.md
               

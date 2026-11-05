@@ -99,17 +99,39 @@ Integrate the AI Agent with the Voice Flow.
 11. **Validate** and **Publish** Flow. In the popped up window, click on dropdown menu to select **Latest** label (**DO NOT** Select any other tag but only **Latest**), then click **Publish**.
       ![Profiles](../graphics/Lab1_AI_Agent/publish_flow.png)
 
-13. Assign the Flow to your **Channel (Entry Point)**.
-12. Do this by first going to **Channels** and search for your channel **<copy><w class="attendee"></w>\_Channel</copy>**.
+12. Assign the Flow to your **Channel (Entry Point)**.
+13. Do this by first going to **Channels** and search for your channel **<copy><w class="attendee"></w>\_Channel</copy>**.
       ![Profiles](../graphics/Lab1_AI_Agent/2.52.png)
 
 
-11. Click on **<copy><w class="attendee"></w>\Channel</copy>**. In the **Channel** settings section, change the following and then **Save** the changes.<br/>
+14. Click on **<copy><w class="attendee"></w>\Channel</copy>**. In the **Channel** settings section, change the following and then **Save** the changes.<br/>
     Routing Flow: **<copy>AutonomousAI_Flow_2000_<w class="attendee"></w></copy>**<br/>
     Version Label: **Latest**<br/>
     ![Profiles](../graphics/Lab1_AI_Agent/2.53.gif)
-10. Dial the support number assigned to your **<w class="attendee"></w>\_Channel** to test the Autonomous AI Agent over a voice call.
+15. Dial the support number assigned to your **<w class="attendee"></w>\_Channel** to test the Autonomous AI Agent over a voice call.
    ![Profiles](../graphics/Lab1_AI_Agent/2.84.png)
+   - Example Script:
+      - When asked by IVR, put in your NationalId using the keypad
+      - It recognises your name from Airtable record
+      - Call now goes to the AI Agent
+      - AI Agent tells you what it can do
+      - Offers you to be authenticated
+      - You agree
+      - AI Agent asks you for specific position digits
+      - You read out the specific digits of the pin, like 'zero' 'one' or 'one' 'one' etc.
+      - Authenticates and offers you your outstanding due
+      - Offers you full or partial payment
+      - You pick what you like
+      - It send you email on the email address you have acces to for this lab
+      - You ask the agent to wait while you put in the payment
+      - You can use dummy card 4242 4242 4242 4242
+      - Exp 01/29
+      - CVV 123
+      - Pay
+      - Let the agent know you have paid
+      - Agent will check if you have
+      - You could then ask about investments or ask for last transaction and then want to dispute it
+      - Agent will transfer you to a human
 
 ### Task 2. Test Agent Handoff Configurations
 
