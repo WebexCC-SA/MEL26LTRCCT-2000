@@ -107,7 +107,7 @@ Integrate the AI Agent with the Voice Flow.
 14. Click on **<copy><w class="attendee"></w>Channel</copy>**. In the **Entry Points** settings section, change the following and then **Save** the changes.<br/>
     Routing Flow: **<copy>AutonomousAI_Flow_2000_<w class="attendee"></w></copy>**<br/>
     Version Label: **Latest**<br/>
-    ![Profiles](../graphics/Lab1_AI_Agent/2.53.gif)
+    ![Profiles](../graphics/Lab1_AI_Agent/ep_setting_flow_latest.png)
 15. Dial the support number assigned to your **<w class="attendee"></w>_Channel** to test the Autonomous AI Agent over a voice call.
    ![Profiles](../graphics/Lab1_AI_Agent/2.84.png)
    - Example Script:
