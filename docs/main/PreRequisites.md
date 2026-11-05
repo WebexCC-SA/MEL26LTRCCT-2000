@@ -9,6 +9,10 @@ icon: material/bullseye-arrow
     <td style="background-color: #d9edf7; font-weight: bold; color: black;">Email Box</td>    
     <td><a href="https://webmail.appinzip.com/" target="_blank">https://webmail.appinzip.com/</a></td>
   </tr>
+    <tr>
+    <td style="background-color: #d9edf7; font-weight: bold; color: black;">Email Address</td>    
+    <td><copy>wxcclabsadmin_ID<w class="attendee"></w>@appinzip.com</copy></td>
+  </tr>
   <tr>
     <td style="background-color: #d9edf7; font-weight: bold; color: black;">Control Hub</td>    
     <td><a href="https://admin.webex.com/" target="_blank">https://admin.webex.com/</a></td>
