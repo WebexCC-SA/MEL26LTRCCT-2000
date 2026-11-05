@@ -41,7 +41,7 @@ Integrate the AI Agent with the Voice Flow.
     - Next, on the HTTP activity, let's look at the Request URL - **https://api.airtable.com/v0/appyHCipREdqlqiDe/Customers?filterByFormula={NationalId}="{{NationalId_Caller}}"** - it uses the NationalId collected from the caller to look up the {{firstName}}, {{lastName}} and the {{NationalId}} from the single source of truth.
     - In the same activity, we need to set the Bearer token. Replace the xxxx with 'Bearer (your_token_from_email)' Do not include the quotes
     - Copy this from your email box that has the credentials.
-    - We then play a message using Cisco TTS: **{{firstName}} {{lastName}}** - this is to tell us attendees the names for our records assigned to us so we know we are using the right records.
+    - We then play a message using Cisco TTS: <copy>**{{firstName}} {{lastName}}**</copy> - this is to tell us attendees the names for our records assigned to us so we know we are using the right records.
     - The next activity is critical: the **VirtualAgentV2** node
     - This is where we bring in the **Webex AI Agent (Autonomous)**
     - We created before in Mission 1 and tested: **<w class="attendee"></w>_outstanding_collection** <br>
@@ -61,11 +61,11 @@ Integrate the AI Agent with the Voice Flow.
       - Leave the Event Name blank
       - Event Data is how the flow can pass context into the AI agent — for example, a caller’s name or language preference or IDs — so the agent can use it in its welcome message, instructions, action descriptions, or slots.
 
-8. **VirtualAgent** Handled Node can be sent to a **Play Message** activity that thanks the caller for using the AI Agent.
+8. **VirtualAgent** Handled Node can be sent to a **Play Message** activity that thanks the caller for using the AI Agent and disconnect the caller.
 
-9. **Escalated Path - Important**
+9. **Escalated Path - <span style="color: red;">[IMPORTANT]</span>>**
     - Connect the **Escalated** path from the **Virtual Agent V2** activity to the **Parse**
-    - We now capture **$.escalation_trigger** into **transfer_type** <br>
+    - We now capture **$.escalation_trigger** into **transfer_type** flow variable already available in the flow<br>
          ![Profiles](../graphics/Lab1_AI_Agent/escalated_parse.png)<br>
     - Connect the **Parse** activity from previous step to the **Case** activity.
     - We route based on 3 values of transfer_type: agent_transfer, dispute_transfer, investment_transfer
