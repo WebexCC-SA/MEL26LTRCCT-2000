@@ -51,7 +51,7 @@ You already have outgoing email configs/integrations setup in the tenant (Webex 
 10. **Created Knowledge Base is [Webex Bank](https://webexbank.appinzip.com/){:target="\_blank"}**
    ![Profiles](../graphics/Lab1_AI_Agent/kb.png)
 
-11. Provide the following information in the **Add the essential details**, then click **Create**:
+11. Provide the following information in the **Profile** tab, then click **Create**:
 
     > Agent Name: **<copy><w class="attendee"></w>\_2000_AutoAI_Lab</copy>**
     >
