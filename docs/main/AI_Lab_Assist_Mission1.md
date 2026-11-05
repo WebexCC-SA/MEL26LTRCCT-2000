@@ -66,12 +66,12 @@ Your mission is to:
 5. Make sure your agent status is **Available**. 
    ![Profiles](../graphics/Lab1_AI_Agent/3.6_.png)
 
-6. Place a test call to the number that is associated with you Channel **<w class="attendee"></w>\_2000_Channel**, and, for example, mention that you need some flowers for a wedding party. **Allow the AI Agent to complete its response before requesting to transfer the call to a live human agent**. Then ask the AI Agent to transfer you to the human agent.
+6. Place a test call to the number that is associated with you Channel **<w class="attendee"></w>\_Channel**, and, for example, mention that you need to dispute a transaction. **Allow the AI Agent to complete its response before requesting to transfer the call to a live human agent**. Then ask the AI Agent do the authentication before your transfer to the human agent.
 
-7. Answer the call on your Agent Desktop. You will see a window with the message **"AI agent transfer summary is ready"** pop up. You can click on **View Summary** from the window.
-   ![Profiles](../graphics/Lab1_AI_Agent/3.8.png)
+7. Answer the call on your Agent Desktop. You will see a window with the message **"AI agent transfer summary is ready"** pop up. You can click on **View Summary** from the window. Most of the critical details are already presented to the human agent
+   ![Profiles](../graphics/Lab1_AI_Agent/ai_agent_transfer_summary.png)
 
-8. The **AI agent transfer summary is ready** notification will disappear after a few seconds. However, you can always reopen it by clicking on the AI Assistant widget.
-   ![Profiles](../graphics/Lab1_AI_Agent/3.9.png)
+8. As a human agent, you can Get Assistance on the call on how to handle disputes.
+   ![Profiles](../graphics/Lab1_AI_Agent/ai_agent_transfer_summary_get_assist.png)
 
 <p style="text-align:center"><strong>Congratulations, you have officially completed this mission! 🎉🎉 </strong></p>
