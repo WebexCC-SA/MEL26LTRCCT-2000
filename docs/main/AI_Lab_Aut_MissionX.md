@@ -12,10 +12,9 @@ Your mission is to:
 Integrate the AI Agent with the Voice Flow.
 
 ### Task 1. Download the preconfigured voice flow <br>
-<span style="color: red;">[IMPORTANT]</span> Download the flow [Pre_config_Voice_Flow](../graphics/Lab1_AI_Agent/inbound_flow_ai_agent_collection.json){: download="voice_ai_agent_fee_collection_inbound.json"} and import the WxCC voice flow and then we hook up AI Agent we built already.
+<span style="color: red;">[IMPORTANT]</span> Download the flow [Pre_config_Voice_Flow](../graphics/Lab1_AI_Agent/inbound_flow_ai_agent_collection.json){: download="inbound_flow_ai_agent_collection.json"} and import the WxCC voice flow and then we hook up AI Agent we built already.
 
 1. Open [Control Hub](https://admin.webex.com){:target="_blank"} and go to **Contact Center** navigate to **Flows**, click on **Manage Flows** dropdown list and select **Create Flows**.
-   ![Profiles](../graphics/Lab1_AI_Agent/2.47.gif)
 
 2. One the next page select **Import a flow** and click on **Next**.
    ![Profiles](../graphics/Lab1_AI_Agent/2.48.a1.png)
@@ -23,6 +22,7 @@ Integrate the AI Agent with the Voice Flow.
 3. Choose the file that we downloaded in step 1 above.
 
 4. Name the new flow **<copy>AutonomousAI_Flow_2000_<w class="attendee"></w></copy>** and click on **Create Flow**.
+   - Flow names don't like numbers to be at the start.
       ![Profiles](../graphics/Lab1_AI_Agent/2.48a.png)
 
 5. Make sure the **Edit** mode and **Enable Decryption** is set to **ON**. You will now see that the flow is ready, well mostly.
@@ -34,24 +34,32 @@ Integrate the AI Agent with the Voice Flow.
     - The Caller hits the **CollectDigits** node
     - Collect the **NationalId** from the caller at this node - a 5 digit number that you can see in the [Airtable repo](https://airtable.com/appyHCipREdqlqiDe/shrQkcmfHDvxvFyHp){:target="_blank"}.
       ![Profiles](../graphics/Lab1_AI_Agent/airtable_customer_natid.png)
-    - Next, Setting 2 variables - **phone_number_use** = {{ NewContact.ANI | slice(2)}} and **NationalId_Caller** = {{CollectDigits.DigitsEntered}} - we will be using the latter to datadip into Airtable to fetch **{{firstName}} and {{lastName}} and {{NationalId}}**
+    - Next, Setting 2 variables - **phone_number_use** = {{ NewContact.ANI | slice(2)}} and **NationalId_Caller** = {{CollectDigits.DigitsEntered}}
+    - <span style="color: red;">[IMPORTANT]</span> just make sure the variables inside {{}} are correct from the activity blocks they are referenced from.
+    - we will be using NationalId_Caller to datadip into Airtable to fetch **{{firstName}} and {{lastName}} and {{NationalId}}**
       ![Profiles](../graphics/Lab1_AI_Agent/collect_digit_var_set.png)
     - Next, on the HTTP activity, let's look at the Request URL - **https://api.airtable.com/v0/appyHCipREdqlqiDe/Customers?filterByFormula={NationalId}="{{NationalId_Caller}}"** - it uses the NationalId collected from the caller to look up the {{firstName}}, {{lastName}} and the {{NationalId}} from the single source of truth.
-    - In the same activity, we need to set the Bearer token right after the word 'Bearer' and a space. Copy this from your email box that has the credentials.
+    - In the same activity, we need to set the Bearer token. Replace the xxxx with 'Bearer (your_token_from_email)' Do not include the quotes
+    - Copy this from your email box that has the credentials.
     - We then play a message using Cisco TTS: **{{firstName}} {{lastName}}** - this is to tell us attendees the names for our records assigned to us so we know we are using the right records.
-    - The next activity is the most important **VirtualAgentV2** node
+    - The next activity is critical: the **VirtualAgentV2** node
     - This is where we bring in the **Webex AI Agent (Autonomous)**
     - We created before in Mission 1 and tested: **<w class="attendee"></w>_outstanding_collection** <br>
        ![Profiles](../graphics/Lab1_AI_Agent/vva2_choice_eventdata.png)
+    - Dropdown and choose your AI agent
     - Note the Event Data inputs:
       <copy>
+      ```json
       {
       "nationalid": "{{NationalId}}", 
       "firstName":"{{firstName}}", 
       "lastName":"{{lastName}}"
       }
+      ```
       </copy>
-      These could be used inside the Agent for various reasons. Most importantly to trigger actions
+      - Paste it into Event Data
+      - Leave the Event Name blank
+      - Event Data is how the flow can pass context into the AI agent — for example, a caller’s name or language preference or IDs — so the agent can use it in its welcome message, instructions, action descriptions, or slots.
 
 8. **VirtualAgent** Handled Node can be sent to a **Play Message** activity that thanks the caller for using the AI Agent.
 
