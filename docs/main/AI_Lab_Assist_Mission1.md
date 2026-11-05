@@ -51,7 +51,7 @@ Your mission is to:
 
 ### Task 3. Test the Feature
 
-1. Login to the **Agent Desktop** with your Agenti user.
+1. Login to the **Agent Desktop** with your Agent user.
    ![Profiles](../graphics/Lab1_AI_Agent/3.39.png)
 
 2. Select **Desktop** Handle calls using option and click on **Save & Continue**.
