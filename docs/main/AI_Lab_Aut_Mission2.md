@@ -45,7 +45,7 @@ Configure Fulfillment action to collect details from the customer and send them 
       - Authentication: Execute [fetch_balance] with the users's {{nationalid}} to recover the PIN . If the national id number is not available, ask the customer. Then [auth_user]
 
          <details>
-         <summary><strong>fetch_transactions</strong></summary>
+         <summary><strong>fetch_balance</strong></summary>
 
          The AI Agent action hits this flow in Connect with NationalId
 
