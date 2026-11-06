@@ -44,12 +44,14 @@ Configure Fulfillment action to collect details from the customer and send them 
    - Let's look at the first set:
       - Authentication: Execute [fetch_balance] with the users's {{nationalid}} to recover the PIN . If the national id number is not available, ask the customer. Then [auth_user]
 
-      **<details><summary>fetch_transactions<span style="color: orange;"></span></summary>**
-      The AI Agent action hits this flow in Connect with NationalId
+         <details>
+         <summary><strong>fetch_transactions</strong></summary>
 
-        ![Profiles](../graphics/Lab1_AI_Agent/fetch_balance_connect.png)
+         The AI Agent action hits this flow in Connect with NationalId
 
-      ## </details>
+         ![Profiles](../graphics/Lab1_AI_Agent/fetch_balance_connect.png)
+
+         </details>
 <!--
 Internal notes:
 - Confirm the lab URL.
