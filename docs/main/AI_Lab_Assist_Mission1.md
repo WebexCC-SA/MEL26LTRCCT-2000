@@ -21,7 +21,7 @@ Your mission is to:
 
 
 
-### (<span style="color: red;"><strong>Read Only</strong></span>) Task 1. Order Provisioning & Control Hub Settings.
+### (<span style="color: red;"><strong>Read Only</strong></span>) Task 1. Control Hub Settings.
 
 
 1. Go to Control Hub and logon as Admin user **<copy>wxcclabs+admin_ID<w class="attendee"></w>@gmail.com</copy>**. From there, go to Contact Center > AI Features.
@@ -52,9 +52,9 @@ Your mission is to:
 ### Task 3. Test the Feature
 
 1. Login to the **Agent Desktop** with your Agent user.
-   ![Profiles](../graphics/Lab1_AI_Agent/3.39.png)
+   <a href="https://desktop.wxcc-us1.cisco.com/" target="_blank">https://desktop.wxcc-us1.cisco.com/</a>
 
-2. Select **Desktop** Handle calls using option and click on **Save & Continue**.
+2. Select **Desktop** Handle calls using option, check that your correct team is chosen and click on **Save & Continue**.
    ![Profiles](../graphics/Lab1_AI_Agent/3.44.png)
 
 3. Allow of using your headset. 
@@ -66,7 +66,7 @@ Your mission is to:
 5. Make sure your agent status is **Available**. 
    ![Profiles](../graphics/Lab1_AI_Agent/3.6_.png)
 
-6. Place a test call to the number that is associated with you Channel **<w class="attendee"></w>\_Channel**, and, for example, mention that you need to dispute a transaction. **Allow the AI Agent to complete its response before requesting to transfer the call to a live human agent**. Then ask the AI Agent do the authentication before your transfer to the human agent.
+6. Place a test call to the number that is associated with you Channel **<w class="attendee"></w>_Channel**, and, for example, go through the same motions as before but this time instead of outstanding dues, ask for the last transaction. Dispute this transaction. **Allow the AI Agent to complete its response before requesting to transfer the call to a live human agent**.
 
 7. Answer the call on your Agent Desktop. You will see a window with the message **"AI agent transfer summary is ready"** pop up. You can click on **View Summary** from the window. Most of the critical details are already presented to the human agent
    ![Profiles](../graphics/Lab1_AI_Agent/ai_agent_transfer_summary.png)
