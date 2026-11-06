@@ -38,7 +38,7 @@ Configure Fulfillment action to collect details from the customer and send them 
 3. Let's review each flow here together with the **Action in the AI Studio**
 
 
-<!--
+
 
 4. When configuring the AI Agent, we saw a bunch of actions. These actions were triggered based on the instructions we provided.
    - Let's look at the first set:
@@ -50,13 +50,10 @@ Configure Fulfillment action to collect details from the customer and send them 
         ![Profiles](../graphics/Lab1_AI_Agent/fetch_balance_connect.png)
 
       ## </details>
-
+<!--
 Internal notes:
 - Confirm the lab URL.
 - Update the screenshot after testing.
-
-
-
 
 -->
 
