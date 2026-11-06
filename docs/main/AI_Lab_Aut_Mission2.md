@@ -48,7 +48,11 @@ Configure Fulfillment action to collect details from the customer and send them 
          <summary><strong>fetch_balance</strong></summary>
 
          The AI Agent action hits this flow in Connect with NationalId
-
+         ```
+         {
+         "nationalid": "58293"
+         }
+         ```
          ![Profiles](../graphics/Lab1_AI_Agent/fetch_balance_connect.png)
 
          </details>
@@ -56,7 +60,7 @@ Configure Fulfillment action to collect details from the customer and send them 
          <details>
          <summary><strong>auth_user</strong></summary>
 
-         The AI Agent action hits this flow in Connect with NationalId
+         The AI Agent action hits this flow in Connect with retrieved PIN
 
          ```
          {
@@ -65,7 +69,7 @@ Configure Fulfillment action to collect details from the customer and send them 
          ```
 
          ![Profiles](../graphics/Lab1_AI_Agent/auth_user_connect.png)
-
+         > **Security:** `PIN` and `NationalId` are sensitive. In a realworld implementation, it could be an approval on their banking app or a onetime code.
          </details>
          
       - Execute [payment_session] and inform the customer a Payment URL has been sent to their email. Wait for payment confirmation from the customer.
