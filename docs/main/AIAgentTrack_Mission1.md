@@ -69,7 +69,7 @@ You already have outgoing email configs/integrations setup in the tenant (Webex 
 
 12. Customise the Welcome message if you like. Focus on the Instructions having a logical flow:
     - Action triggers like [fetch_balance], [auth_user] etc tell the AI Agent the tools to invoke to complete the fulfillment.
-    - We will discuss this in 'Mission 2: (<span style="color: red;"><strong>Read Only</strong></span>) Configure Fulfillment Using Webex Connect Flow': docs/main/AI_Lab_Aut_Mission2.md
+    - We will discuss this in 'Mission 2: (<span style="color: red;"><strong>Read Only</strong></span>) Configure Fulfillment Using Webex Connect Flow'
 
 13. In the Conversation Tab, add additional Custom style prompts that you would like the AI Agent to follow and also local vocabulary, business abbreviations and what they mean etc.
 
