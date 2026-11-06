@@ -73,7 +73,8 @@ Configure Fulfillment action to collect details from the customer and send them 
          </details>
          
       - Execute [payment_session] and inform the customer a Payment URL has been sent to their email. Wait for payment confirmation from the customer.
-                  <details>
+         
+         <details>
          <summary><strong>payment_session</strong></summary>
 
          The AI Agent action sends this payload:
@@ -89,6 +90,25 @@ Configure Fulfillment action to collect details from the customer and send them 
          ![Profiles](../graphics/Lab1_AI_Agent/payment_session_connect.png)
 
          </details>
+
+      - Execute [confirm_payment] to check the status of payment and update CRM with new balance
+
+         <details>
+         <summary><strong>confirm_payment</strong></summary>
+
+         The AI Agent action sends this payload:
+
+         ```
+         {
+         "Balance": 15000,
+         "RecordID": "recZkHsiTTGUvCfhj",
+         "PaymentSessionId": "c13fbb4f-ecd9-4591-8947-5606335bf27c"
+         }
+         ```
+         ![Profiles](../graphics/Lab1_AI_Agent/confirm_payment_connect.png)
+
+         </details>
+
 <!--
 Internal notes:
 - Confirm the lab URL.
