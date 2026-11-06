@@ -39,8 +39,10 @@ Integrate the AI Agent with the Voice Flow.
     - we will be using NationalId_Caller to datadip into Airtable to fetch **{{firstName}} and {{lastName}} and {{NationalId}}**
       ![Profiles](../graphics/Lab1_AI_Agent/collect_digit_var_set.png)
     - Next, on the HTTP activity, let's look at the Request URL - **https://api.airtable.com/v0/appyHCipREdqlqiDe/Customers?filterByFormula={NationalId}="{{NationalId_Caller}}"** - it uses the NationalId collected from the caller to look up the {{firstName}}, {{lastName}} and the {{NationalId}} from the single source of truth.
-    - In the same activity, we need to set the Bearer token. Replace the xxxx with 'Bearer (your_token_from_email)' Do not include the quotes or paranthesis
+    - In the same activity, we need to set the Bearer token. Replace the xxxx with 'Bearer (your_token_from_email)' Do not include the quotes or paranthesis <br>
+
       ![Profiles](../graphics/Lab1_AI_Agent/http_activity_bearer_setting.png)<br>
+      
     - Copy this from your email box that has the credentials.
     - We then play a message using Cisco TTS: <copy>**{{firstName}} {{lastName}}**</copy> - this is to tell us attendees the names for our records assigned to us so we know we are using the right records.
     - The next activity is critical: the **VirtualAgentV2** node
