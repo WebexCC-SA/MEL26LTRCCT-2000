@@ -29,3 +29,6 @@ This setup showcases a complete AI agent workflow — from knowing what the cust
 This hands-on exercise demonstrated how Webex Autonomous Agent can streamline business processes, enhance customer interactions, and integrate with external systems to deliver a comprehensive solution.
 
 <span style="color: grey;">[IMPORTANT]</span> Download the file [Presentation-Latest](../graphics/download/LTRCCT-2000.pptx){: download="LTRCCT2000.pptx"}
+
+
+<span style="color: grey;">[IMPORTANT]</span> Download the file [LABCOL-1710](../graphics/download/LABCOL-1710.docx){: download="LABCOL-1710.docx"}
