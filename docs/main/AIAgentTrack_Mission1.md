@@ -22,8 +22,10 @@ In order to be able to complete this lab, you need this:
 
 <span style="color: red;">[IMPORTANT]</span>
 
-You already have read access to our [Airtable repositories](https://airtable.com/appyHCipREdqlqiDe/shrQkcmfHDvxvFyHp) completed for the Customer data
-<span style="color: red;">[Not Required - Just in case]</span>If needed, use the Airtable Credentials provided to you.
+You already have read access to our [Airtable repositories](https://airtable.com/appyHCipREdqlqiDe/shrQkcmfHDvxvFyHp) completed for the Customer data <br>
+
+<span style="color: red;">Not Required - Just in case:</span>If needed, use the Airtable Credentials provided to you.<br>
+
 You already have outgoing email configs/integrations setup in the tenant (Webex Connect).
 
 
