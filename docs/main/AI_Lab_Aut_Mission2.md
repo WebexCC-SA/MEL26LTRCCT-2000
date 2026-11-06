@@ -41,7 +41,7 @@ Configure Fulfillment action to collect details from the customer and send them 
 
 
 4. When configuring the AI Agent, we saw a bunch of actions. These actions were triggered based on the instructions we provided.
-   - Let's look at the first set:
+   - Let's look at the different actions in sequence and how they Connect:
       - Authentication: Execute [fetch_balance] with the users's {{nationalid}} to recover the PIN . If the national id number is not available, ask the customer. Then [auth_user]
 
          <details>
@@ -50,6 +50,33 @@ Configure Fulfillment action to collect details from the customer and send them 
          The AI Agent action hits this flow in Connect with NationalId
 
          ![Profiles](../graphics/Lab1_AI_Agent/fetch_balance_connect.png)
+
+         </details>
+
+         <details>
+         <summary><strong>auth_user</strong></summary>
+
+         The AI Agent action hits this flow in Connect with NationalId
+
+         ![Profiles](../graphics/Lab1_AI_Agent/auth_user_connect.png)
+
+         </details>
+         
+      - Execute [payment_session] and inform the customer a Payment URL has been sent to their email. Wait for payment confirmation from the customer.
+                  <details>
+         <summary><strong>payment_session</strong></summary>
+
+         The AI Agent action sends this payload:
+
+         ```
+         {
+            "OutstandingDue": "530",
+            "email": "wxcclabs+admin_ID010@gmail.com",
+            "customerRef": "recNyZKCvIBJLXsh0",
+            "SessionId": "agent123"
+         }
+         ```
+         ![Profiles](../graphics/Lab1_AI_Agent/payment_session_connect.png)
 
          </details>
 <!--
