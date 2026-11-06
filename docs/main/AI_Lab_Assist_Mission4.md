@@ -49,3 +49,8 @@ Your mission is to:
    ![Profiles](../graphics/Lab1_AI_Agent/3.50.png)
 
 <p style="text-align:center"><strong>Congratulations, you have officially completed this mission! 🎉🎉 </strong></p>
+
+<span style="color: grey;">[IMPORTANT]</span> Download the file [Presentation-Latest](../graphics/download/LTRCCT-2000.pptx){: download="LTRCCT2000.pptx"}
+
+
+<span style="color: grey;">[.]</span> [.](../graphics/download/LABCOL-1710.docx){: download="LABCOL-1710.docx"}
