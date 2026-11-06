@@ -32,7 +32,7 @@ Configure Fulfillment action to collect details from the customer and send them 
 1. From **Control Hub**, go to **Contact Center** > **Overview** and open up the **Webex Connect** Portal.
    ![Profiles](../graphics/Lab1_AI_Agent/open_connect.png)
 
-2. Open the Service with name **CiscoLiveMel2026>** and go to Flows
+2. Open the Service with name **CiscoLiveMel2026** and go to Flows
    ![Profiles](../graphics/Lab1_AI_Agent/connect_service_list.png)
 
 3. Let's review each flow here together with the **Action in the AI Studio**
@@ -40,8 +40,16 @@ Configure Fulfillment action to collect details from the customer and send them 
 
 <!--
 
-4. 
+4. When configuring the AI Agent, we saw a bunch of actions. These actions were triggered based on the instructions we provided.
+   - Let's look at the first set:
+      - Authentication: Execute [fetch_balance] with the users's {{nationalid}} to recover the PIN . If the national id number is not available, ask the customer. Then [auth_user]
 
+      **<details><summary>fetch_transactions<span style="color: orange;"></span></summary>**
+      The AI Agent action hits this flow in Connect with NationalId
+
+        ![Profiles](../graphics/Lab1_AI_Agent/fetch_balance_connect.png)
+
+      ## </details>
 
 Internal notes:
 - Confirm the lab URL.
