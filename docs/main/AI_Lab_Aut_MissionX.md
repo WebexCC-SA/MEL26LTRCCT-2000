@@ -42,7 +42,7 @@ Integrate the AI Agent with the Voice Flow.
     - In the same activity, we need to set the Bearer token. Replace the xxxx with 'Bearer (your_token_from_email)' Do not include the quotes or paranthesis <br>
 
       ![Profiles](../graphics/Lab1_AI_Agent/http_activity_bearer_setting.png)<br>
-      
+
     - Copy this from your email box that has the credentials.
     - We then play a message using Cisco TTS: <copy>**{{firstName}} {{lastName}}**</copy> - this is to tell us attendees the names for our records assigned to us so we know we are using the right records.
     - The next activity is critical: the **VirtualAgentV2** node
@@ -130,8 +130,8 @@ Integrate the AI Agent with the Voice Flow.
       - Exp 01/29
       - CVV 123
       - Pay
-      - Let the agent know you have paid
-      - Agent will check if you have
+      - Let the agent know you have paid and ask the agent to confirm that you have paid
+      - Agent will trigger a backend check to see if you have and update the Airtable record
       - You can refresh the [Airtable](https://airtable.com/appyHCipREdqlqiDe/shrQkcmfHDvxvFyHp) and see if the OutstandingDue has been updated with the correct balance
       - You could then ask about investments or ask for last transaction and then want to dispute it
       - Agent will transfer you to a human

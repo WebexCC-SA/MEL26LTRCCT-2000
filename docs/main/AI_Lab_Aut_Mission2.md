@@ -37,4 +37,19 @@ Configure Fulfillment action to collect details from the customer and send them 
 
 3. Let's review each flow here together with the **Action in the AI Studio**
 
+
+<!--
+
+4. 
+
+
+Internal notes:
+- Confirm the lab URL.
+- Update the screenshot after testing.
+
+
+
+
+-->
+
 <p style="text-align:center"><strong>Congratulations, you have officially completed this mission! 🎉🎉 </strong></p>
