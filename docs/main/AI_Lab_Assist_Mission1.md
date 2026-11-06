@@ -43,9 +43,9 @@ Your mission is to:
 6. Let's open it and review the setup
 
    ![Profiles](../graphics/Lab1_AI_Agent/ch_ai_realtime_summ_q_on.png) <br>
-7. Under Profile, we can instruct the Assistant on the kind of focused help the human would need
-8. The knowledge tab has the knowledge base already selected for us.
-9. The knowledge base was created using [Fraud_KB](../graphics/download/Fraud_KB.docx){: download="Fraud_KB.docx"}
+7. Under Profile, we can instruct the Assistant on the kind of focused help the human would need<br>
+8. The knowledge tab has the knowledge base already selected for us.<br>
+9. The knowledge base was created using [Fraud_KB](../graphics/download/Fraud_KB.docx){: download="Fraud_KB.docx"}<br>
 10. The Actions tab helps the human agent to fetch transactions if the AI agent was asked by the customer to escalate immediately <br>
    ![Profiles](../graphics/Lab1_AI_Agent/ai_assist_action.png) <br>
 
@@ -69,10 +69,10 @@ Your mission is to:
 6. Place a test call to the number that is associated with you Channel **<w class="attendee"></w>_Channel**, and, for example, go through the same motions as before but this time instead of outstanding dues, ask for the last transaction. Dispute this transaction. **Allow the AI Agent to complete its response before requesting to transfer the call to a live human agent**.
 
 7. Answer the call on your Agent Desktop. You will see a window with the message **"AI agent transfer summary is ready"** pop up. You can click on **View Summary** from the window. Most of the critical details are already presented to the human agent
-   ![Profiles](../graphics/Lab1_AI_Agent/ai_agent_transfer_summary.png)
+   ![Profiles](../graphics/Lab1_AI_Agent/ai_agent_transfer_summary.png)<br>
 
 8. As a human agent, you can Get Assistance on the call on how to handle disputes.
-   ![Profiles](../graphics/Lab1_AI_Agent/ai_agent_transfer_summary_get_assist.png)
+   ![Profiles](../graphics/Lab1_AI_Agent/ai_agent_transfer_summary_get_assist.png)<br>
 
 9. The Assitant instructs the human agent to collect the customer ID, so the transaction can be revalidated.
     ![Profiles](../graphics/Lab1_AI_Agent/ai_assist_rtime_action_summary.png)
