@@ -24,29 +24,40 @@ Your mission is to:
 
 ## Build
 
-### (<span style="color: red;"><strong>Read Only</strong></span>) Task 1. Order Provisioning & Control Hub Settings
+### (<span style="color: red;"><strong>Read Only</strong></span>) Task 1. Control Hub Settings
 
-1. You should have the new AI Assistant SKU **A-FLEX-AI-ASST** from CCW provisioned in the tenant.
+1. Admins with the appropriate profile and access controls will be able to see the AI Assistant menu in Control Hub. From there, the customer can enable/disable the **Wrap-up summaries**.
+   <details>
+   <summary><strong>Generated Summaries</strong></summary>
 
-2. Once you have provisioned it, admins with the appropriate profile and access controls will be able to see the AI Assistant menu in Control Hub. From there, the customer can enable/disable the **Wrap-up summaries**.
-   ![Profiles](../graphics/Lab1_AI_Agent/3.45.png)
+   ![Profiles](../graphics/Lab1_AI_Agent/ch_wrap_up_summaries.png)
 
-3. The Agent needs to logged in to the Team that is configured with Desktop Layout that has Agent Assistance features configured(**Note: Default desktop layout already incudes the AI Agent Assistance widget**). <br/>
+   </details>
+
+2. A new capability to customise the Summary through templates is available. You can access it by clicking on the Summary Template link.<br>
+   This has been configured for you.
+
+   <details>
+   <summary><strong>Summaries Template</strong></summary>
+
+   ![Profiles](../graphics/Lab1_AI_Agent/ch_wrap_up_summaries_template.png)
+
+   </details>
+
+2. The Agent needs to logged in to the Team that is configured with Desktop Layout that has Agent Assistance features configured(**Note: Default desktop layout already incudes the AI Agent Assistance widget**). <br/>
    <br/>Agents Team:
-   ![Profiles](../graphics/Lab1_AI_Agent/3.41.png)  
-    <br/>Desktop Layout:
-   ![Profiles](../graphics/Lab1_AI_Agent/3.43.png)
+   ![Profiles](../graphics/Lab1_AI_Agent/summaries_team_global_layout.png)  
 
 ### Task 2. Test Wrap-up Summary feature
 
 1. Make sure the agent is in the **Available** status.
    ![Profiles](../graphics/Lab1_AI_Agent/3.6_.png)
 
-2. Place a call to your channel. Answer the call by the agent and put the agent on mute if you are using a Webex phone, as we use one microphone for both the caller and agent. As the customer say that you ordered flowers but didn't receive a delivery.
-   ![Profiles](../graphics/Lab1_AI_Agent/3.49.png)
+2. Place a call to your channel. Answer the call by the agent and put the agent on mute if you are using a Webex phone, as we use one microphone for both the caller and agent. As the customer redo the usecase from before - outstanding due, make partial or full payment, query transaction, dispute or ask about investment.
+   ![Profiles](../graphics/Lab1_AI_Agent/ai_agent_transfer_summary.png)
 
-3. Disconnect the call. You should see the wrap up code suggestion and the wrap up summery of the call.
-   ![Profiles](../graphics/Lab1_AI_Agent/3.50.png)
+3. Disconnect the call. You should see the wrap up code suggestion and the wrap up summary of the call.
+   ![Profiles](../graphics/Lab1_AI_Agent/ai_assist_rtime_action_summary.png)
 
 <p style="text-align:center"><strong>Congratulations, you have officially completed this mission! 🎉🎉 </strong></p>
 
