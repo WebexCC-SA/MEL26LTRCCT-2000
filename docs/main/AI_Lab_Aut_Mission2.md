@@ -58,6 +58,12 @@ Configure Fulfillment action to collect details from the customer and send them 
 
          The AI Agent action hits this flow in Connect with NationalId
 
+         ```
+         {
+         "PIN": "1234"
+         }
+         ```
+
          ![Profiles](../graphics/Lab1_AI_Agent/auth_user_connect.png)
 
          </details>
