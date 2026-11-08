@@ -22,7 +22,7 @@ In order to be able to complete this lab, you need this:
 
 <span style="color: red;">[IMPORTANT]</span>
 
-You already have read access to our [Airtable repositories](https://airtable.com/appyHCipREdqlqiDe/shrQkcmfHDvxvFyHp) completed for the Customer data <br>
+You already have read access to our [Airtable repositories](https://airtable.com/appyHCipREdqlqiDe/shrQkcmfHDvxvFyHp){:target="\_blank"} completed for the Customer data <br>
 
 <span style="color: red;">Not Required - Just in case:</span>If needed, use the Airtable Credentials provided to you.<br>
 
@@ -80,7 +80,7 @@ You already have outgoing email configs/integrations setup in the tenant (Webex 
 
 ### Task 2. Test your AI Agent
 
-1. Click on **Preview** and test the AI Agent to understand how it behaves using the **chat channel** by clicking on **Start a chat**. You can start the conversation with your first name and follow the responses of the AI Agent.
+1. Click on **Preview** and test the AI Agent to understand how it behaves using the **chat channel** by clicking on **Start a chat**. You can start the conversation with your first name and other details from Customer ID <w class="attendee"></w> which is same as your attendee ID = <w class="attendee"></w> row at [Airtable repositories](https://airtable.com/appyHCipREdqlqiDe/shrQkcmfHDvxvFyHp){:target="\_blank"}. Please follow the responses of the AI Agent.
 
 2. Click on **Preview** and test the AI Agent to understand how it behaves using the **voice channel** by clicking on **Start a call**. You can start the conversation by answering the questions the AI agent asks.
    > **Note:** This Lab is being conducted in a classroom with approximately 20 attendees.  
