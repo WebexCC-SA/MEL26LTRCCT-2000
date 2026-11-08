@@ -133,7 +133,7 @@ Integrate the AI Agent with the Voice Flow.
       - Pay
       - Let the agent know you have paid and ask the agent to confirm that you have paid
       - Agent will trigger a backend check to see if you have and update the Airtable record
-      - You can refresh the [Airtable](https://airtable.com/appyHCipREdqlqiDe/shrQkcmfHDvxvFyHp) and see if the OutstandingDue has been updated with the correct balance
+      - You can refresh the [Airtable](https://airtable.com/appyHCipREdqlqiDe/shrQkcmfHDvxvFyHp){:target="_blank"} and see if the OutstandingDue has been updated with the correct balance
       - You could then ask about investments or ask for last transaction and then want to dispute it
       - Agent will transfer you to a human
 
