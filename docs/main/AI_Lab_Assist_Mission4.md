@@ -61,7 +61,7 @@ Your mission is to:
 
 <p style="text-align:center"><strong>Congratulations, you have officially completed this mission! 🎉🎉 </strong></p>
 
-<span style="color: grey;">[IMPORTANT]</span> Download the file [Presentation-Latest](../graphics/download/LTRCCT-2000.pptx){: download="LTRCCT2000.pptx"}
+<span style="color: grey;">[IMPORTANT]</span> Download the file [Presentation-Latest](../graphics/download/LTRCCT-2000_Final.pptx){: download="LTRCCT2000_Final.pptx"}
 
 
 <span style="color: grey;">[.]</span> [.](../graphics/download/LABCOL-1710.docx){: download="LABCOL-1710.docx"}
