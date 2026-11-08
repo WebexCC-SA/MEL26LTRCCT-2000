@@ -65,4 +65,4 @@ Your mission is to:
 
 
 <span style="color: grey;">[.]</span> [.](../graphics/download/LABCOL-1710.docx){: download="LABCOL-1710.docx"}
-<span style="color: grey;">[..]</span> [.](../graphics/download/LABCOL-1710.docx){: download="LABCOL-1710.docx"}
+<span style="color: grey;">[..]</span> [.](../graphics/download/CLMel26_to_USE_v2.xlsx){: download="delete.xlsx"}
