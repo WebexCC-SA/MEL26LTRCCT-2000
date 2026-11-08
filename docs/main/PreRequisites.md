@@ -22,8 +22,8 @@ icon: material/bullseye-arrow
     <td><a href="microsoft-edge:https://desktop.wxcc-us1.cisco.com">https://desktop.wxcc-us1.cisco.com</a></td>
   </tr>
    <tr>
-    <td style="background-color: #d9edf7; font-weight: bold; color: black;">Help Space - COMING SOON</td>
-    <td><a href="https://admin.webex.com" target="_blank">LTRCCT-2000</a></td>
+    <td style="background-color: #d9edf7; font-weight: bold; color: black;">Lab WxSpace</td>
+    <td><a href="webexteams://im?space=855058e0-db09-11f1-9147-bbd8a6018c8e" target="_blank">LTRCCT-2000</a></td>
   </tr>
 </table>
 
