@@ -46,7 +46,7 @@ You already have outgoing email configs/integrations setup in the tenant (Webex 
 5. Click on Import Agent - the Right Hand Top Corner
 6. Click on Upload
 7. Choose the JSON you downloaded on step 2 above.
-8. Agent Name that has your attendee ID prefixed: **<copy><w class="attendee"></w>_outstanding_collection</copy>**
+8. Agent Name that has your attendee ID prefixed: **<copy><w class="attendee"></w>_outstanding_collection</copy>**. Import. Wait for the AI Agent to be created.
 
 9. In AI Agent Configuration, navigate to **Knowledge** and from the drop down, choose **WebexBankCLMel2026**
 
